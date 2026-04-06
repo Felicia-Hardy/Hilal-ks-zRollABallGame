@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom" at "2026-04-06T22:15:21.2812956Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom" at "2026-04-06T23:15:03.8942053Z"
 Built from '6000.4/staging' branch; Version is '6000.4.1f1 (8535861f39e1) revision 8729990'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'tr' Physical Memory: 7971 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-06T22:15:21Z
+Date: 2026-04-06T23:15:03Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.1f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/hilom/My project (1)
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-65368
+62493
 -licensingIpc
 LicenseClient-hilom
 -force-d3d12
@@ -68,12 +68,12 @@ C:/Users/hilom/My project (1)
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [4340]  Target information:
+Player connection [18372]  Target information:
 
-Player connection [4340]  * "[IP] 192.168.1.44 [Port] 0 [Flags] 2 [Guid] 2002303050 [EditorId] 2002303050 [Version] 1048832 [Id] WindowsEditor(7,selene) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [18372]  * "[IP] 192.168.1.44 [Port] 0 [Flags] 2 [Guid] 2800739574 [EditorId] 2800739574 [Version] 1048832 [Id] WindowsEditor(7,selene) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [4340] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [4340] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18372] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18372] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,7 +85,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 12.08 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.33 ms, found 3 plugins.
 Initialize engine version: 6000.4.1f1 (8535861f39e1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/hilom/My project (1)/Assets
@@ -103,18 +103,18 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
 CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-hilom"
 [Licensing::IpcConnector] LicenseClient-hilom channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1" at "2026-04-06T22:15:23.4813887Z"
-Begin MonoManager ReloadAssembly
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1" at "2026-04-06T23:15:06.0318613Z"
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004518 seconds.
+Registered in 0.005465 seconds.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -122,32 +122,33 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.638 seconds
-Domain Reload Profiling: 1372ms
-	BeginReloadAssembly (212ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (151ms)
-	LoadAllAssembliesAndSetupDomain (300ms)
-		LoadAssemblies (206ms)
-		AnalyzeDomain (287ms)
-			TypeCache.Refresh (285ms)
-				TypeCache.ScanAssembly (258ms)
-	FinalizeReload (641ms)
+- Finished resetting the current domain, in  0.873 seconds
+Domain Reload Profiling: 1972ms
+	BeginReloadAssembly (334ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (170ms)
+	LoadAllAssembliesAndSetupDomain (466ms)
+		LoadAssemblies (321ms)
+		AnalyzeDomain (441ms)
+			TypeCache.Refresh (435ms)
+				TypeCache.ScanAssembly (398ms)
+	FinalizeReload (877ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (68ms)
-			BeforeProcessingInitializeOnLoad (144ms)
-			ProcessInitializeOnLoadAttributes (193ms)
-			ProcessInitializeOnLoadMethodAttributes (111ms)
+			InitializePlatformSupportModulesInManaged (88ms)
+			BeforeProcessingInitializeOnLoad (177ms)
+			ProcessInitializeOnLoadAttributes (232ms)
+			ProcessInitializeOnLoadMethodAttributes (190ms)
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              e76dd678c4d84696bb3e7ce8af212e00
-  Correlation Id:          c0cacfa8fccb46c2efcb7a7f5a85d53d
-  External correlation Id: 4093686265436801678
+  Session Id:              c4aa6222744f442684c213f9ec91b276
+  Correlation Id:          7b0a7fee2843402e49f399673a5356ac
+  External correlation Id: 9061297759961639136
   Machine Id:              XKxCPiat0Kuau2Vir2mc3JKSD2A=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-hilom-6000.4.1" (connect: 0.00s, validation: 0.01s, handshake: 1.63s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1-notifications" at "2026-04-06T22:15:25.1277822Z"
-[Licensing::Module] Licensing Background thread has ended after 3.85s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-hilom-6000.4.1" (connect: 0.00s, validation: 0.01s, handshake: 2.14s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1-notifications" at "2026-04-06T23:15:08.1843525Z"
+[Licensing::Module] Licensing Background thread has ended after 4.29s
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -187,7 +188,7 @@ Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Un
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Refreshing native plugins compatible for Editor in 2.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -197,1060 +198,60 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.760 seconds
-Domain Reload Profiling: 2330ms
-	BeginReloadAssembly (202ms)
-		DisableScriptedObjects (6ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (737ms)
-	LoadAllAssembliesAndSetupDomain (574ms)
-		LoadAssemblies (436ms)
-		AnalyzeDomain (246ms)
-			TypeCache.Refresh (176ms)
-				TypeCache.ScanAssembly (161ms)
-			BuildScriptInfoCaches (57ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (761ms)
+- Finished resetting the current domain, in  1.485 seconds
+Domain Reload Profiling: 3377ms
+	BeginReloadAssembly (406ms)
+		DisableScriptedObjects (13ms)
+		CreateAndSetChildDomain (83ms)
+	RebuildCommonClasses (65ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (165ms)
+	LoadAllAssembliesAndSetupDomain (1234ms)
+		LoadAssemblies (848ms)
+		AnalyzeDomain (586ms)
+			TypeCache.Refresh (425ms)
+				TypeCache.ScanAssembly (384ms)
+			BuildScriptInfoCaches (132ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (1486ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (130ms)
-			ProcessInitializeOnLoadAttributes (332ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
-			AfterProcessingInitializeOnLoad (6ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (277ms)
+			ProcessInitializeOnLoadAttributes (700ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6290 unused Assets / (5.3 MB). Loaded Objects now: 7135.
-Memory consumption went from 167.9 MB to 162.5 MB.
-Total: 11.062700 ms (FindLiveObjects: 1.643900 ms CreateObjectMapping: 0.697100 ms MarkObjects: 5.960600 ms  DeleteObjects: 2.758700 ms)
+Unloading 6291 unused Assets / (6.4 MB). Loaded Objects now: 7136.
+Memory consumption went from 166.1 MB to 159.7 MB.
+Total: 12.891800 ms (FindLiveObjects: 1.032700 ms CreateObjectMapping: 0.887300 ms MarkObjects: 5.627600 ms  DeleteObjects: 5.341400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2254844.123518 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/Sprites
-  importAddress: Guid(8de696b851da44884914b25172c04b7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/Sprites using Guid(8de696b851da44884914b25172c04b7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'beee081a09f839ca2f4b9fbbc8b2ec3c') in 0.1782447 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=200cf0733264971b798329644f360e3b DependenciesID=9cacfedce6f5fe89cda6d752a9b8702d StaticDependenciesID=3ae226dbb42c035feb909c6de4087064 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Settings.png
-  importAddress: Guid(b19489b3ffbd6417989ea6d8d96437e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Settings.png using Guid(b19489b3ffbd6417989ea6d8d96437e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7d717e895aa2a85319454c50e19c8d19') in 0.1453307 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fdc0ceafea4f1fe87b74d0d2800dcd7b DependenciesID=f0a58de1e3baf641f3d2fd78b5603115 StaticDependenciesID=954c52bbb1e694d28cd9275df59f0407 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Dollar.png
-  importAddress: Guid(cc52ac453e019400984c19bb920c9217) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Dollar.png using Guid(cc52ac453e019400984c19bb920c9217) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0b733e66262bfa6346164289dac4eb9e') in 0.0236221 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=be7a663deae26d0ab79a0c3c78eb9aaf DependenciesID=2e4b16c1b01bac9ca3f80e79ffc80740 StaticDependenciesID=77720655b6e08fdf627f6eb57f91803b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/QuestionMark.png
-  importAddress: Guid(64f0a7f4e869e4a4bb5359134071e196) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/QuestionMark.png using Guid(64f0a7f4e869e4a4bb5359134071e196) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4a418e39b50a22a9a33422b4fb2a9979') in 0.0232983 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=90dc6335477cbccc8bcbe3113b02e5a3 DependenciesID=033ea7924c88643809c87b5a1189da24 StaticDependenciesID=a8cf8712b6b8b155571b9b5d76542ff2 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Home.png
-  importAddress: Guid(ca0a2ab339ca748a1981966c17c1829e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Home.png using Guid(ca0a2ab339ca748a1981966c17c1829e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '06143019f29c37c241722df4565e6c94') in 0.0246933 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=830f115d2055753c87d81ea3edaed3ee DependenciesID=321c29f1bfe57ff8152e3896f45a3af6 StaticDependenciesID=82acdcdde61009b8786e77bc46c5ee17 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/Sprites
-  importAddress: Guid(411244601b6ad428ba7cd4e4abf2e885) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/Sprites using Guid(411244601b6ad428ba7cd4e4abf2e885) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5cb0b844544b196a24c7df4e85b7617b') in 0.0167802 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=65a49f87acc0b18448bb4c58645a5abc DependenciesID=3d8de70a8271fafbc5b8813c4dd7b2a0 StaticDependenciesID=c5d5a340a19bf1ad1125cee110f81fc0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Restart.png
-  importAddress: Guid(59e899b457bb24211ba8899f1a5d1d8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Restart.png using Guid(59e899b457bb24211ba8899f1a5d1d8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '610ba90d2622b8283b5bc14579ab0bfd') in 0.0326652 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5a95b07d57173fa47588e000884bb715 DependenciesID=c170d21b2d6c3bf4746f0458e5e758e2 StaticDependenciesID=f6a0861b7a7b82a11fa3a1e5a678404d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/SoundON.png
-  importAddress: Guid(493fd7d0e626d4db091f50928058f0b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/SoundON.png using Guid(493fd7d0e626d4db091f50928058f0b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cca966cbbe0b8fa8280758e13c441008') in 0.0284193 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d9e69e4c8b5f6afaaa7d5950d0f6b521 DependenciesID=1b8118cf51ea6b3e531b5de90cd9e389 StaticDependenciesID=931b0ea4ead200965929c1286652aef0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/RightArrow2.png
-  importAddress: Guid(7a9bf3ca46891465fb5d44d7ce02e2a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/RightArrow2.png using Guid(7a9bf3ca46891465fb5d44d7ce02e2a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0380421d4ee744f57af6d7dba86624d0') in 0.0435826 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=00f73e88a1953c301b0c475290d171b7 DependenciesID=d79dfcd4b59996cffd6a6e26d6f3d36b StaticDependenciesID=84f5d235d00acbca64e9998bdae1617b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/Vector/Vector Files/WoodenBlocks.ai
-  importAddress: Guid(abb2b03b592eb433d874aa880b50f022) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/Vector/Vector Files/WoodenBlocks.ai using Guid(abb2b03b592eb433d874aa880b50f022) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '828d587b3c778ec364e27ed3750eb30e') in 0.0158672 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f8caf66e0c90308b593af1846360d0f DependenciesID=a0dad84372287f006d712f94f1b060c6 StaticDependenciesID=38616cc6888423fdb9559c411e04da92 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/Vector
-  importAddress: Guid(bf2d114789f774ffb90bcd24af1e9970) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/Vector using Guid(bf2d114789f774ffb90bcd24af1e9970) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fff0206372a12a41e1ca4570bb272095') in 0.0146695 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0920c112170e9c562173e4d0ad0da3e3 DependenciesID=f45ed05119e5087d582e8b9653afa1b4 StaticDependenciesID=15d4a94d8e11daf2d85ce98707ed9e34 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG
-  importAddress: Guid(3b0b14694f6d44db987da72067132e21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG using Guid(3b0b14694f6d44db987da72067132e21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2faf0e252a0bfa428a712c34ee5f7f95') in 0.0154694 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ed426363e624d6ba71ab966cd811fbd2 DependenciesID=9902a40f2929ce21c13b96dcd3f397b1 StaticDependenciesID=7d8de26866e596099274baf89af9f050 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Yes.png
-  importAddress: Guid(6ed18601f275b4f8fa32d21d0f35343c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Yes.png using Guid(6ed18601f275b4f8fa32d21d0f35343c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0898bbbe419f289a32e8f6cddbd0bac3') in 0.0309121 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0e545074378ef33abb73683dc05329e0 DependenciesID=507e2e03fdbc6c674e53e48aa59bee00 StaticDependenciesID=ef1a497e76c69df03a7eac34abe70d6c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/UpArrow.png
-  importAddress: Guid(9d38a27b414cd4aa8a1b03f38b9ddcb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/UpArrow.png using Guid(9d38a27b414cd4aa8a1b03f38b9ddcb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '91f3fc772e6cb6edc9a9d68939fbfb60') in 0.0255023 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=068819c9d009d80df19f0d6b06328e59 DependenciesID=970e559b9c819263160adab937cf09f3 StaticDependenciesID=06f8367fac240f270c9bedca65052aca 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Trophy.png
-  importAddress: Guid(368f6f2553af84f4fb74cea5340541ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Trophy.png using Guid(368f6f2553af84f4fb74cea5340541ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c72a8d3b32f5cc8588fa3a897a9b9f36') in 0.0311811 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7948afb1ce3c4b05affdb20a3c1fb936 DependenciesID=792bd7bbe6b6dfd25383971d6f150f32 StaticDependenciesID=e8fce1932e7c8e96c1ff13066a866272 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/LeftArrow2.png
-  importAddress: Guid(2967f194254044f96abcd9634aaae57b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/LeftArrow2.png using Guid(2967f194254044f96abcd9634aaae57b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'eac44c137542228b28b30104c634caa9') in 0.0283898 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=164bf7dbba9fdbf30611b1bd9683085f DependenciesID=97f83804f598d41e2ca43a9f7e90db36 StaticDependenciesID=1529ffb358d561850c6d60d4c72cca55 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/SoundOFF.png
-  importAddress: Guid(c66941a5047f24dadb66035a5ed07773) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/SoundOFF.png using Guid(c66941a5047f24dadb66035a5ed07773) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd058477b134914dfcfe82ac496475148') in 0.028592 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3797f810a5467b77149e624bf288a7b1 DependenciesID=ad7aab881c4a1e988df901694a4a8ae9 StaticDependenciesID=82bd3fe32661a333e60c0d9ec0293bc6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/UpArrow.png
-  importAddress: Guid(3629ce294ae2640b6a8137de2adde913) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/UpArrow.png using Guid(3629ce294ae2640b6a8137de2adde913) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5db103084405d14c782119b5e44e3040') in 0.0331713 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b6891f5a3c7096e3e4d5775c2f5e0e08 DependenciesID=38501ba56fbd60421c7e64db8b18c3cd StaticDependenciesID=463302a002e451fa6266b5ce379edc7a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Email.png
-  importAddress: Guid(96f7c7fbe059d4ea8b8f3e34827a1e5f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Email.png using Guid(96f7c7fbe059d4ea8b8f3e34827a1e5f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '05e499f295b09561997b30364d14ea32') in 0.0346548 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7e8639175cec94926f4e5ceb1edf9dad DependenciesID=0b601b2f40f41069c9b03fd440c83e4e StaticDependenciesID=6976a4069a44de0089f24d1c00ae616c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Info.png
-  importAddress: Guid(e2f97d3975aca4a5f975ded803cdc06b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Info.png using Guid(e2f97d3975aca4a5f975ded803cdc06b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b649159e037be6faa0ffc1b1067e227b') in 0.067198 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6dfc13faed138a90416c0802733ffd0b DependenciesID=9de4390551d56237a3230f351010c108 StaticDependenciesID=48ac3edb9dd1f43ddc88a6551f15cd0a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/RightArrow2.png
-  importAddress: Guid(158d9e70551a94b70b0ef8b0ff7e3183) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/RightArrow2.png using Guid(158d9e70551a94b70b0ef8b0ff7e3183) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4c86aba7b60ade31cda4088f576d8bec') in 0.0338126 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=716ff73743a4ee037b62688854fa33e6 DependenciesID=dafa124cc646abb7e37530215831236c StaticDependenciesID=f24b0bded9eef659ed8daa460f2516c2 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Yes.png
-  importAddress: Guid(3450eb53f02974cc38c1ef039141f7f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Yes.png using Guid(3450eb53f02974cc38c1ef039141f7f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f57db6dc1e722627f08a1ec0df7a613e') in 0.0370599 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d952b9476829356333aacbc74b50d31b DependenciesID=f5327693e0070a19173fd6361e0e2b8a StaticDependenciesID=6ab624d20f31dd75f394bf14968b216e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/GooglePlus.png
-  importAddress: Guid(b6ac349d9494c4899bb71d2f222547eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/GooglePlus.png using Guid(b6ac349d9494c4899bb71d2f222547eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e3f1da7035dbf6c5b794d0e3c433fdf3') in 0.0297017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=74a767698fa0ca485cf55fadd60e5bf4 DependenciesID=115ac4f7353aa24e6dace589c9d42574 StaticDependenciesID=abbdfaccdb24f79e50aea8b2f45d94c4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Pause.png
-  importAddress: Guid(4d901cadb1574446ea83838465c11d86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Pause.png using Guid(4d901cadb1574446ea83838465c11d86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b778d0c52342ab4516fdaa6105614d14') in 0.0384323 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=68030858d4f79a66bd0e5e9ad43ab2a6 DependenciesID=50f2d391a810452fd8981ee608d5aaa6 StaticDependenciesID=05992707c3dade3af85b7725ceb81237 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Menu.png
-  importAddress: Guid(5607024d493b549c69e86596366a7fa2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Menu.png using Guid(5607024d493b549c69e86596366a7fa2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '00a5347e9602cd6de0c6f2ff30d7a88c') in 0.0253725 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8b7782b46bb83e30aded85d72ed9d3a4 DependenciesID=5722fe6be164020f5e407563527ab42f StaticDependenciesID=06275bb00903b24512f0e88e0471492e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1
-  importAddress: Guid(b8e2dc72af72694429392e9ef47b8d52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1 using Guid(b8e2dc72af72694429392e9ef47b8d52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ba03abdad4572cc0907d97b3f905b938') in 0.0201117 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eff7267f1b83ecf21bd94f389570b1c8 DependenciesID=64675fc9188b6b0fbc593a3f6a1b8468 StaticDependenciesID=eae5e8f7af14095f1716ee0444eaf084 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Twitter.png
-  importAddress: Guid(93a69ad77ea914e33bf489705120f1e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Twitter.png using Guid(93a69ad77ea914e33bf489705120f1e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9c2c781c5e56a22e01ccaa613eb429b5') in 0.0221405 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d4a2b196645a42e4ee782d1689f8b2df DependenciesID=38a1a4f46e1c334f7ff222acb5b1e9d6 StaticDependenciesID=6231340926ce7739e9aa9707820a3deb 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Facebook.png
-  importAddress: Guid(777d63edabbf0469d8c7f88249361a06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Facebook.png using Guid(777d63edabbf0469d8c7f88249361a06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b0fc2fc3702c03bdd25682557cfaaa4f') in 0.0221142 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b1fb3e872b2081325d5c1f67ad2f26b6 DependenciesID=cf915fe1ce15ac351101042c3ffc45b2 StaticDependenciesID=7659091a69421567878a5b6851dab7e0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/DownArrow.png
-  importAddress: Guid(ca15e163733754df096397f031537b1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/DownArrow.png using Guid(ca15e163733754df096397f031537b1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9722d49fa951974606e63ef0a755adfb') in 0.0223527 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b55bf50ace9f73372e13a0a269a1e29b DependenciesID=c259e93348a7a11cb172e0120f0ff503 StaticDependenciesID=da424a018bd479d8e11034e37e82acbc 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/Sprites/WoodenBG-resized.png
-  importAddress: Guid(278249b5f3eca4d38be55ca9a2a87e0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/Sprites/WoodenBG-resized.png using Guid(278249b5f3eca4d38be55ca9a2a87e0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c1a6fddd4dc6f673b658dad1d0db3610') in 0.0221797 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa300ad6ab912f1aebd207b3d3d4c61c DependenciesID=bc3f6dc7a45e62a6a450135b33b74ef8 StaticDependenciesID=811fed45fee36943f07f1ad4f28dff07 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/Sprites
-  importAddress: Guid(a1f687b05772f48138b07d6436b4442d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/Sprites using Guid(a1f687b05772f48138b07d6436b4442d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a342e92dc07d3e9846cf735c7bb1a6d1') in 0.0142607 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=231a78dd47d4be5250a43ee6e2a74273 DependenciesID=57e6e313886f5d3d246617c498a91a6c StaticDependenciesID=d5ad043e74444fce55a8a0efbd6ae524 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Forward.png
-  importAddress: Guid(2cb44f2ba74d44feaa8292079e48c93d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Forward.png using Guid(2cb44f2ba74d44feaa8292079e48c93d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '15881bfdebea83e8d1fee6a4517545f2') in 0.0242936 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9485647628d135a1f08526061c2a180c DependenciesID=2c97ea7227c7a124466d1ed146b7cc38 StaticDependenciesID=be834e0176bf69a406a521d1225514e3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/Sprites/Materials/WoodenBG-resized.mat
-  importAddress: Guid(648935bd68367254db9fa1bcbc346fec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/Sprites/Materials/WoodenBG-resized.mat using Guid(648935bd68367254db9fa1bcbc346fec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8a06ab4dfd6a46b3608b9c58c0f9df7b') in 0.0536924 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c41cf2e3cd356174a7c2c69cbf448e9b DependenciesID=c00b699d2b1f0d0ba91768f873f9990f StaticDependenciesID=3b7db83eb233f451aa55063695d18ce8 
+  Time since last request: 2258342.621619 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/UGUI Canvas Meter.shadergraph
+  importAddress: Guid(9d4e8ca8c5046914c87ca6ccef140dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/UGUI Canvas Meter.shadergraph using Guid(9d4e8ca8c5046914c87ca6ccef140dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e1e7306e1e594822b1862535b60cfafc') in 0.9611637 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=76436aaf6217d08c4a2301a6291434ac DependenciesID=de1eb4ee4c414cf54ce08e75e51278b7 StaticDependenciesID=64678502c437f71d20c44e7380f817d4 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Home.png
-  importAddress: Guid(dc784d03a5bcb48e79ea5faa09963f99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Home.png using Guid(dc784d03a5bcb48e79ea5faa09963f99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c0c7288383edbf89a20e74ef4e650e14') in 0.0215929 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4e268241a6439af8c07bc1941d08507a DependenciesID=6dcb894499f998aaf5fe5852d376f3db StaticDependenciesID=7f9a7dbf4afc99c53b40188b12baf8c4 
+  Time since last request: 0.000098 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph
+  importAddress: Guid(a3d800b099a06e0478fb790c5e79057a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph using Guid(a3d800b099a06e0478fb790c5e79057a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e9a9490bf9b735a466227bb7c3eec02a') in 5.9053393 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36f1b83392ec047b988ee1605ee087c5 DependenciesID=4d972735b3a8c7dbc1fae7fb54978f09 StaticDependenciesID=890ff91953c4f5e08382569567706dc6 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Email.png
-  importAddress: Guid(feb0b2e65fe4948eaa2ebfc6c9dd2d1e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Email.png using Guid(feb0b2e65fe4948eaa2ebfc6c9dd2d1e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '452b441b0b11b75202ceb1fdbba3f752') in 0.0218369 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9ee44e26787203585b747e49e51d72fd DependenciesID=9836dcdb305030d4b3680b94531b84c0 StaticDependenciesID=cf0a044c50fb2a24d36c250c77c4514a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000078 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph
+  importAddress: Guid(44245ab89240f51459a5077d7145c452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph using Guid(44245ab89240f51459a5077d7145c452) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3c6d691fc4e3fb4b212e34fa73ea35c4') in 6.1179633 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=85d6ea80c6a553b4ae426167c4b09185 DependenciesID=b17c380975a98489b40896fd3888b2d4 StaticDependenciesID=aa203fe20286b93bbb417ea443e0332f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Dollar.png
-  importAddress: Guid(59ec1a13a533548139b3cebe8ed491ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Dollar.png using Guid(59ec1a13a533548139b3cebe8ed491ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '28f0068dd35f7ecf2259f5e1a218b56a') in 0.0313447 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=11484eb0c4f69cedac69330af6a6d23e DependenciesID=61904ad4d531addc49e6167bf9296f86 StaticDependenciesID=f495a04e6a1836afa661c0ac59fdbdaa 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Dollar.png
-  importAddress: Guid(e94bcf476677c405883b8ae8701ab77c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Dollar.png using Guid(e94bcf476677c405883b8ae8701ab77c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd7fbc560d1f389e4f1e80d81904500f1') in 0.0203176 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a641a39251fad132b0918af60f1a2f13 DependenciesID=133d2c23aeb7469aef0247104c24c6da StaticDependenciesID=a093a071cb38894fea0a1aa38179151b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/WoodenBlocksPreviewSettings.lighting
-  importAddress: Guid(bd5e064a1bf90be499cad7aa84565d63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/WoodenBlocksPreviewSettings.lighting using Guid(bd5e064a1bf90be499cad7aa84565d63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)LightingSettings: switching bake backend from 2 to 1.
- -> (Import Result ID: 'd0b7dccbaf786eb0037daf62aa11c333') in 0.0218192 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=16aecaa732844919234cb915cbc945bb DependenciesID=946a091013d9ef78e850351b7ed2c791 StaticDependenciesID=7dcf97031b7523a0a9439206cd22d2a5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/RightArrow.png
-  importAddress: Guid(37f6c6fb321ad4710954e2eaa3d57791) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/RightArrow.png using Guid(37f6c6fb321ad4710954e2eaa3d57791) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2480e0468c4122d473cca2e26910ce75') in 0.0225964 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2f053439e558e49f1d540f8217418e1c DependenciesID=b105427df9fa291ada0175d8633c6d05 StaticDependenciesID=4737d6066114775074c914469d0e00a4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Pause.png
-  importAddress: Guid(ff8821736c16349d4b3c8dc2f5ccedcf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Pause.png using Guid(ff8821736c16349d4b3c8dc2f5ccedcf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '26f5b2cde33b7e1eae9423ffa02b8db6') in 0.0211421 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=93fac058fb3315763ca6d934f5dbd93f DependenciesID=ef488b90af8b26c1a9131c0491b0fd0b StaticDependenciesID=93f3c1bd9746e2aa5204c27b1b0a7e22 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Plus.png
-  importAddress: Guid(95f2deec6adc349d593041107b4f54dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Plus.png using Guid(95f2deec6adc349d593041107b4f54dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '971f67e6a545806c77cfaeeb289b1c4e') in 0.021126 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1aab7fad28a1def344d8b9267515db80 DependenciesID=068cac6f2e18348752a2d897fbcb9649 StaticDependenciesID=69e795f6ae1bb2c2518fd9e4ea25c5ba 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/QuestionMark.png
-  importAddress: Guid(4897c39ed1db34fcc81eca6e13612f56) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/QuestionMark.png using Guid(4897c39ed1db34fcc81eca6e13612f56) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '12e7125afd75273eaf438dfee35f3ce0') in 0.019518 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5d621ccfa8e179d993bb354e9180d12a DependenciesID=3ee27cfc3381238a7e24a885f38c87a9 StaticDependenciesID=2c9ed1ad3beb88b1aecad9336ee94a6d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/PlayfulPreviewSettings.lighting
-  importAddress: Guid(b20d8f4b8e23a614a9ed9f473f0fd5e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/PlayfulPreviewSettings.lighting using Guid(b20d8f4b8e23a614a9ed9f473f0fd5e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)LightingSettings: switching bake backend from 2 to 1.
- -> (Import Result ID: 'e3de895cd986bed520b2745af53bc797') in 0.018289 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0837677bdf6a3286bcd9b941753c9f8a DependenciesID=a2bbc9f6ff93c54a638960969e34dd82 StaticDependenciesID=f66f9bb13ca23482be38317105f34ae5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Star.png
-  importAddress: Guid(e1e3e64dac28149d1bf7e15801897c70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Star.png using Guid(e1e3e64dac28149d1bf7e15801897c70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd1d77913b91b5bfcbc2d921e23a268bc') in 0.6069701 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d287c035c05f5b406d5872a73b46e8fb DependenciesID=a0e878c46b435201351d1acd87c71ba7 StaticDependenciesID=5b49edc853af92971456818c5eb3c05d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Forward.png
-  importAddress: Guid(616e65414b8734419bc94481aa4f8be2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Forward.png using Guid(616e65414b8734419bc94481aa4f8be2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '944387511727173c272d02d5c5d042cc') in 0.1688039 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=61502f1baf55c02cb821431b57a0f53d DependenciesID=46bb7e45e1c980ee57b7d87eb7cc44a4 StaticDependenciesID=8ac78ad3e6f1b21f4d5b1c0d07095303 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/RightArrow2.png
-  importAddress: Guid(6f83ff1cec9b44582825b4e3893abc1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/RightArrow2.png using Guid(6f83ff1cec9b44582825b4e3893abc1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fd902df89deb8d910250e3b8755eb185') in 0.1529212 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5688a7d3dc9005b447449917a628e49b DependenciesID=38f04b2f8ad266ced33d2abacf511c99 StaticDependenciesID=d1ce8f25006233a44e359a79a4e66523 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Email.png
-  importAddress: Guid(1157603c9e47a409b9a75b91ff561c00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Email.png using Guid(1157603c9e47a409b9a75b91ff561c00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd7e4ade8daa06be0e4c44832dd88eb13') in 0.1248176 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7980ca2bf86e08eae7a51eea7cdd59a6 DependenciesID=19d8b3363653ebf579728a1b1b9cedb7 StaticDependenciesID=13d7f3ffbdc7c2f04c52a2fb16ce3a2e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG
-  importAddress: Guid(511c6c09e455d4d44a3400e22b473172) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG using Guid(511c6c09e455d4d44a3400e22b473172) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7bec616a332b7105efe0cd8a9cb97546') in 0.11219 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c63d41d77d6ac1fbb95a094681131068 DependenciesID=0da80025f9441b9a471fb6df96cbc054 StaticDependenciesID=86ec0178b2c489758a19a6324604ed9a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/UpArrow.png
-  importAddress: Guid(bf4f8c4ec9d894084a787e5999d407a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/UpArrow.png using Guid(bf4f8c4ec9d894084a787e5999d407a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '82cfb063156f8fb055a19de131b49ecb') in 0.0516772 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f6160246fe51520c20f3f01a796a55ad DependenciesID=9d7b397020e6ccfa32e55de31f8e08f2 StaticDependenciesID=5104702fc54ef0eba39495dbaaf9e427 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Trophy.png
-  importAddress: Guid(186dfa9d9d421454d9da3d5f547f3126) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Trophy.png using Guid(186dfa9d9d421454d9da3d5f547f3126) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ad526a8bd7faae24e83012df0b39e843') in 0.0224932 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8fbaa75b70895ef665bb0e66566cb0f6 DependenciesID=f751c888dd6df745beb8254f6229c677 StaticDependenciesID=d87a7c78cd36f7f240a410718ec773ab 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/PurpleRockPreview.unity
-  importAddress: Guid(9d9e693198fa7457286d9938465e29aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/PurpleRockPreview.unity using Guid(9d9e693198fa7457286d9938465e29aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '43d461401a863e6b3c23112856e17746') in 0.0166983 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9c1435c1a11c2e43faf1326cd37acb6e DependenciesID=a055950b6abc1844cf1d5b54c623edb1 StaticDependenciesID=48debc8306b8346dd89c9f7f530ac915 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Readme/Readme.pdf
-  importAddress: Guid(cc6794fbc4f514833839d7cba3973e4a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Readme/Readme.pdf using Guid(cc6794fbc4f514833839d7cba3973e4a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '47ffabb701786f9d9c28c7d21c7e4eba') in 0.0129254 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1d1d23bfd17c928b1d3308f86a5255bd DependenciesID=d02eba2984901d5c87059afac1536829 StaticDependenciesID=2fa9e3b866d0f4310d75bce9da1de513 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Star.png
-  importAddress: Guid(48ef7593f17504acea11af90fd3e4d92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Star.png using Guid(48ef7593f17504acea11af90fd3e4d92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dbaa1f47ee6a6643dd099f3a5b9657b3') in 0.0178198 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9fc1ecf5b480183c37acf5efb2a39079 DependenciesID=e834286d8b1a63a939849d1a61d2c51d StaticDependenciesID=bf68441995ac04a27c3e45fa88282524 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Pause.png
-  importAddress: Guid(f06723030ef874765a5e4ed1908b0a3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Pause.png using Guid(f06723030ef874765a5e4ed1908b0a3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bc65d61ae96de69a298e0a2435432f64') in 0.0192604 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f15c3ecd7b64625d3df3e73b49be060 DependenciesID=76157595b4b2a538ca26787608ae60fd StaticDependenciesID=63bd4ac639bb3a3f08a80abd0b5ccae7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/Vector
-  importAddress: Guid(1b2fb8aeca5a54e86abafe4127e344a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/Vector using Guid(1b2fb8aeca5a54e86abafe4127e344a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bd293a0439544ee05406672b6a4bf75d') in 0.0179012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8639440512c2f9c5536798a758f78218 DependenciesID=ccbc979d96ecb1e7cd43ee4034b32fc7 StaticDependenciesID=885f6a64382cb8c68a53181fd923bcab 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Backward.png
-  importAddress: Guid(4f8c06a6606ba4691a8da5d0abe8332e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Backward.png using Guid(4f8c06a6606ba4691a8da5d0abe8332e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '90e3131326de8b7f5bff2019769dae57') in 0.022096 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=45cb75b051a151af0fd876864a5972b9 DependenciesID=d5f372c0b249c4ba6b7e5effb7a5267a StaticDependenciesID=4cd50cba31edd134e92db174fd1f1b17 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Info.png
-  importAddress: Guid(b7ceebf6d34824b7f844e3bbd52315d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Info.png using Guid(b7ceebf6d34824b7f844e3bbd52315d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a3f4077fa86a444f9d305c7f0c695c76') in 0.0220163 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=054f84af7b73f9c6be0a2016af557605 DependenciesID=2f5ef61b194efa445595b97d13d8e0f3 StaticDependenciesID=377680a9995b8b776fc8a0e37cc3972b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Play.png
-  importAddress: Guid(2f5f88874246f4ebbaca620f3cd37fad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Play.png using Guid(2f5f88874246f4ebbaca620f3cd37fad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'be34994f344ecd7d37dd4e3d00f569e9') in 0.018677 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2384bbffcd312900fc17e7b740e12938 DependenciesID=e22dff3a6affcade0fff4d9078e6185a StaticDependenciesID=57c6d0d00125a872ecaaaf1b3d0ef166 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Gamecenter.png
-  importAddress: Guid(7eacd24ae468b4bc585c82d27ba7eeed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Gamecenter.png using Guid(7eacd24ae468b4bc585c82d27ba7eeed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9acc3503a6bf7402f382236cb37d5319') in 0.0193846 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d69b400f9843e1633a49cf15307779b6 DependenciesID=a169db539883ac76d4d58ad65be9bccc StaticDependenciesID=b3f0a84e1cdd349ce1a644a9ab631018 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Backward.png
-  importAddress: Guid(c916bf149f09c459089a45701474d78c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Backward.png using Guid(c916bf149f09c459089a45701474d78c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3f60e562295b3ed7e4ed92d79a283595') in 0.0195789 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3bdaf54cf2792fe4e6b22a777aa8cf5e DependenciesID=16ae52991eef1b64b47e51bc893c845d StaticDependenciesID=798b4932bcd6150316477845bacc9da2 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/RightArrow2.png
-  importAddress: Guid(306b16567939347c78cf9ab470a783ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/RightArrow2.png using Guid(306b16567939347c78cf9ab470a783ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f23b572365de62bfceb048b286f96c29') in 0.0170842 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e6e5084c22cb3e7a69b892b6c2d924f0 DependenciesID=48d6a67c8b9bfa1442332713b288e37b StaticDependenciesID=5bfc87eda009b71dcc8c5caedd0742cf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/LazyDayPreviewSettings.lighting
-  importAddress: Guid(1767221ca5f69b646bc836433a30219c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/LazyDayPreviewSettings.lighting using Guid(1767221ca5f69b646bc836433a30219c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)LightingSettings: switching bake backend from 2 to 1.
- -> (Import Result ID: 'b2adfa08baf133b24716832a636db582') in 0.0153822 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0e8878a0ba2f81e167254cb12fd96ed9 DependenciesID=2bf348e16be2299ccd3c67720fc069ed StaticDependenciesID=362cfe07ff8b2596dadbaac4203f2435 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Pause.png
-  importAddress: Guid(ff645a4c999a14801b1a714a2087338a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Pause.png using Guid(ff645a4c999a14801b1a714a2087338a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '13dd2c6d0067ce57a967ab16b1c14a97') in 0.0179743 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8acdaff73b1e6bb7e54ca1dada754c58 DependenciesID=89c98985fa866807f0aac18e712d3b0b StaticDependenciesID=034517d074326ecc199b77afb5c3067e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Plus.png
-  importAddress: Guid(c8d539ab64074495eb2513d09bf5b3cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Plus.png using Guid(c8d539ab64074495eb2513d09bf5b3cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c84997db35ed8983ccc0fc923fc92098') in 0.0204863 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=42d49e1b176b54722254726c84d94472 DependenciesID=a5a32c70e8a2e4cb25d233910e7cc3e5 StaticDependenciesID=2c1af03ab381769182a6ce5b7b6eb768 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/GooglePlus.png
-  importAddress: Guid(dd4882e7a2d7440e59d7a8af06ea9a9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/GooglePlus.png using Guid(dd4882e7a2d7440e59d7a8af06ea9a9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '854c287ad75ebb08d615e3279debeb41') in 0.0170727 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4eeec7614c12b7c659d1f1979dc78123 DependenciesID=a1889bb201be02f0306d98ab77ec20fa StaticDependenciesID=bfaa3f6294dd693023456244a2e7c69c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Settings.png
-  importAddress: Guid(25c2d239600db471aabc8ffa640bc0ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Settings.png using Guid(25c2d239600db471aabc8ffa640bc0ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a4692a8b711b0862a2574b298c32fe6d') in 0.0210098 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8f45f970e07d6ecf2a3d984fd168c46e DependenciesID=dd53eb1b946de9b34665af356f2ee20e StaticDependenciesID=54c83c5e405b9af0b85257949a18d216 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/SoundOFF.png
-  importAddress: Guid(09868a2567e8e495c84e92bfe43dbed3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/SoundOFF.png using Guid(09868a2567e8e495c84e92bfe43dbed3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '556b6be5dde2db6d138989f3a75ac5b9') in 0.0251305 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=367d63032bb6bd0bdb7fe3c80304783f DependenciesID=7da189a2f09b22fe4520c8b98df7c50a StaticDependenciesID=55ec119c7adbaa4cfa8c052bc0d24287 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Play.png
-  importAddress: Guid(ce857edf439f7445da139f48a7f3dcd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Play.png using Guid(ce857edf439f7445da139f48a7f3dcd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3d1a549c95d8c63518f417bad7f57400') in 0.0198582 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9fa50616dd1800321e76a5caddf329ca DependenciesID=3009a72f5bfed1bae68695928d47072d StaticDependenciesID=9e5571c6a2a1e66d4af0e117c13d3179 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/GooglePlus.png
-  importAddress: Guid(b05742cfb10a34ccb8bfd16f85676a04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/GooglePlus.png using Guid(b05742cfb10a34ccb8bfd16f85676a04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ec61b13e6cd8266391c1f21fa81ae733') in 0.0207014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eced4a26992c4856c5dab9ab863c6d22 DependenciesID=5787b93e2faec2112eaad2a316c9ff9c StaticDependenciesID=aac6c5cdc142724de8b73764672d374e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Star.png
-  importAddress: Guid(0fd1070f9532941f6a6fdf5719a3fd1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Star.png using Guid(0fd1070f9532941f6a6fdf5719a3fd1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4ce45b3bd13c5e33ddf4c42b5be03954') in 0.0239267 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e9a305c3b6ef8abbc10cc8316d08de80 DependenciesID=d3e771f95fa7edcf2c6205950fec46b0 StaticDependenciesID=9b0bf9e02e06ba4c8fe58b579d731d52 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/GameCenter.png
-  importAddress: Guid(e8750dbfc75fb48f78495a60b50d42cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/GameCenter.png using Guid(e8750dbfc75fb48f78495a60b50d42cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f194b3dc0537b2aadfff74118202b6f2') in 0.0190505 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa8c551c502fd53d4c7bc4f782cbf7fd DependenciesID=0d3f7da0e17c88ac7720af129139d05a StaticDependenciesID=27df22fdf2900c1a3e55ebeb266b3e00 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/PlayfulPreview.unity
-  importAddress: Guid(abd155de39a854f9a91903a1130caa6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PreviewScenes/PlayfulPreview.unity using Guid(abd155de39a854f9a91903a1130caa6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '039d1b35cb60b6f77399b5c4b0c41367') in 0.0173584 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e9cda98ddf27fce169d0c57c183fadc5 DependenciesID=eaef26bc110f63188d71a3cd831f8478 StaticDependenciesID=0095f1e997bb373eb507c988bbfbe397 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/DownArrow.png
-  importAddress: Guid(d5b8393f09eb6470e905ec740629c4a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/DownArrow.png using Guid(d5b8393f09eb6470e905ec740629c4a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '70409dd2a8895f83574182495dc5d6fd') in 0.0235428 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bb1b734e2fda2962aae4a583e80682eb DependenciesID=3398c3349fa14f6215dcb0bfe00500d7 StaticDependenciesID=ea75cf0a918d3859158b4d9d19c38f83 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Shop.png
-  importAddress: Guid(1402e28f6b5254db2a8c7e8a008025c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/PNG/Shop.png using Guid(1402e28f6b5254db2a8c7e8a008025c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '66ecc245b4252d4e0edc67dbaca6e3ab') in 0.0196459 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e490c2b40215871a4c64c0d46efe265b DependenciesID=1354277c6e77e0dd4e8c2fadb1ed5d7e StaticDependenciesID=5aa501a8149418d6c694dcf6953b7a07 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PurpleRock/Sprites/PurpleRockBG-resized.png
-  importAddress: Guid(3fb580970ae8c48e7befdc608b11eacc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PurpleRock/Sprites/PurpleRockBG-resized.png using Guid(3fb580970ae8c48e7befdc608b11eacc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '732f7b86252c00556f07232a14fc6e7c') in 0.0258834 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=07a078985f8ff804b42e82309f11e510 DependenciesID=d6558fafaab0ad5af00a598afdbc41cf StaticDependenciesID=6444799ae3bd465ab3bfcdf5bb21bc8e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Shop.png
-  importAddress: Guid(36abed496fd744f97a71c25c6cd31f46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Shop.png using Guid(36abed496fd744f97a71c25c6cd31f46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2f8dd48a7ef7e24ba96807efddaf3414') in 0.0231183 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=31310f05be7d9d58bc207635682b047b DependenciesID=da4bbdc9c789901902195b2926203558 StaticDependenciesID=c8a560c99720ed350676b8b2918c2e8e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Play.png
-  importAddress: Guid(6bb92db56863a49bf9fc5e992e334d82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Play.png using Guid(6bb92db56863a49bf9fc5e992e334d82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5d9f9d50e3daeccbff357bb292cdec21') in 0.0237829 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=65e8a72db42f2ea5294ff5b0c4346a29 DependenciesID=7c6959d5cfd73f620de4cd338ff25eec StaticDependenciesID=01df36aae1fb9e1190ed45cf5507b4c1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Email.png
-  importAddress: Guid(01c62efadfd454a479ee0bd73c4b2018) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/Playful/PNG/Email.png using Guid(01c62efadfd454a479ee0bd73c4b2018) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '83cb1e344af7d3b96b94c79022423804') in 0.0188944 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=44bd92b2bf18e3a4cbd2de2ad34f4658 DependenciesID=3a7cf3f1e169cb5063d94363ebb39f0d StaticDependenciesID=55cf16d6b21663b28c217c760cd9eb21 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Trophy.png
-  importAddress: Guid(0589d3eb4e6ef4d269663222f1a92efa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Trophy.png using Guid(0589d3eb4e6ef4d269663222f1a92efa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '94606edd1290335a231b8a964bfaf142') in 0.0205382 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=109ff4b35e1608ab1edb37f5de63105d DependenciesID=640a1744cc79044dc307f457b5ecd38a StaticDependenciesID=4c365859fe2e2789242b552169c2bbb0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Facebook.png
-  importAddress: Guid(f8fbcce33e10b4672b9cf19e5310a455) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Facebook.png using Guid(f8fbcce33e10b4672b9cf19e5310a455) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '19cebf8aac6222982e19891fcd3b42b9') in 0.0195205 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=52a8f9362361cca2b635a63d0737e191 DependenciesID=6c571b0a7b8a674a08bf5144fbc29a5c StaticDependenciesID=98b03faf33a0c72cd49eed82bb8c1693 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/LeftArrow2.png
-  importAddress: Guid(5cf7cc585e72f4a4f9589d76a3a891f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/LeftArrow2.png using Guid(5cf7cc585e72f4a4f9589d76a3a891f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '67307a8ada8f443e90a11a29492eb467') in 0.0273079 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=957ebf3b564db52e841b50fdad9f2d78 DependenciesID=477ebd43758d101cdd2a6a4d9e0e44e9 StaticDependenciesID=96379f4fc00f1d5b34d1f77c6bcb9127 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Shop.png
-  importAddress: Guid(2bd72e24f280d472db2eeda221ac6b4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/WoodenBlocks/PNG/Shop.png using Guid(2bd72e24f280d472db2eeda221ac6b4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '22beeda5473bce9e5aa5662b27353a6e') in 0.0194695 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=82a2ca8d716b6fee7b8a4857a692f904 DependenciesID=fda3386865287403a47503b9b1d8138a StaticDependenciesID=28a7b8a0ff1e9db2bf508cba6fa29c0c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/PreviewScenes
-  importAddress: Guid(867914b8c02174b57bd11d93a307e3b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/PreviewScenes using Guid(867914b8c02174b57bd11d93a307e3b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6afef516ff3c2c05ebdf38bcc1df8eeb') in 0.014301 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e2f8a8010c303923d1603316a4e51045 DependenciesID=7a94a07e1c3057ce24a7028bca2438f7 StaticDependenciesID=2e4ae15bff69d08f9ec01f39014c2fe4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Prepare
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6282 unused Assets / (4.7 MB). Loaded Objects now: 7139.
-Memory consumption went from 170.4 MB to 165.7 MB.
-Total: 37.606000 ms (FindLiveObjects: 4.525800 ms CreateObjectMapping: 0.799000 ms MarkObjects: 26.780200 ms  DeleteObjects: 5.497100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.359047 seconds.
-  path: Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Play.png
-  importAddress: Guid(fc3341b3f1dac464baa311991f5499e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowlyPoly/Game GUI Vol1/LazyDay/PNG/Play.png using Guid(fc3341b3f1dac464baa311991f5499e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '679af3038e8371300dbb645352b0cdc8') in 0.0563064 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=02ab3ec636f9dbe49d65c3cd3d8d5d06 DependenciesID=7aa925a266b3695d8eeb860be43fe82e StaticDependenciesID=7159c5f7626f88951342af7c0df22b17 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.116940 seconds.
-  path: Assets/scripts/MainMenu.cs
-  importAddress: Guid(c7ac518be707a8c409952aeb4875ed10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/MainMenu.cs using Guid(c7ac518be707a8c409952aeb4875ed10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cd43b8ad59d0179003f62f00f004ba6a') in 0.004197 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aea21b734bf3b43e0802d12e07178448 DependenciesID=8c971b1daab7db484c3056049f51d6e1 StaticDependenciesID=bd345e0f95e7ff5983a54754bdf905e3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.963 seconds
-Domain Reload Profiling: 8289ms
-	BeginReloadAssembly (1765ms)
-		DisableScriptedObjects (65ms)
-		CreateAndSetChildDomain (1107ms)
-	RebuildCommonClasses (66ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (187ms)
-	LoadAllAssembliesAndSetupDomain (5290ms)
-		LoadAssemblies (5032ms)
-		AnalyzeDomain (520ms)
-			TypeCache.Refresh (95ms)
-				TypeCache.ScanAssembly (3ms)
-			BuildScriptInfoCaches (357ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (964ms)
-		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (206ms)
-			ProcessInitializeOnLoadAttributes (359ms)
-			ProcessInitializeOnLoadMethodAttributes (90ms)
-			AfterProcessingInitializeOnLoad (6ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6287 unused Assets / (5.1 MB). Loaded Objects now: 7155.
-Memory consumption went from 177.2 MB to 172.1 MB.
-Total: 8.610900 ms (FindLiveObjects: 0.719600 ms CreateObjectMapping: 0.628500 ms MarkObjects: 4.920800 ms  DeleteObjects: 2.339400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Refreshing native plugins compatible for Editor in 3.25 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.014 seconds
-Domain Reload Profiling: 4132ms
-	BeginReloadAssembly (970ms)
-		DisableScriptedObjects (144ms)
-		CreateAndSetChildDomain (243ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (199ms)
-	LoadAllAssembliesAndSetupDomain (1882ms)
-		LoadAssemblies (1410ms)
-		AnalyzeDomain (702ms)
-			TypeCache.Refresh (111ms)
-				TypeCache.ScanAssembly (3ms)
-			BuildScriptInfoCaches (546ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (1015ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (233ms)
-			ProcessInitializeOnLoadAttributes (399ms)
-			ProcessInitializeOnLoadMethodAttributes (95ms)
-			AfterProcessingInitializeOnLoad (6ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6287 unused Assets / (4.6 MB). Loaded Objects now: 7158.
-Memory consumption went from 180.5 MB to 175.8 MB.
-Total: 10.498000 ms (FindLiveObjects: 1.402000 ms CreateObjectMapping: 0.672700 ms MarkObjects: 5.983600 ms  DeleteObjects: 2.273800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 235.496935 seconds.
-  path: Assets/scripts/MainMenu.cs
-  importAddress: Guid(c7ac518be707a8c409952aeb4875ed10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/MainMenu.cs using Guid(c7ac518be707a8c409952aeb4875ed10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '61060b47c1f349050b32ebd91e25f069') in 0.0157634 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aea21b734bf3b43e0802d12e07178448 DependenciesID=5fe0be485d8f5af20d8e66df5d515e0d StaticDependenciesID=f59767e7954f321be8cc57af5b5c1f4f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 692.591508 seconds.
-  path: Assets/MainMenu.unity
-  importAddress: Guid(bc984f6a111459144a329604bf3e455b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/MainMenu.unity using Guid(bc984f6a111459144a329604bf3e455b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '53aa99d23976d370548614e44d8733b3') in 0.9804528 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1d353722fb78adf1c9274bd92ae4b4e1 DependenciesID=425ffb0fa44ec137a3766ab5abcbbcbd StaticDependenciesID=fb49e633957fed462e49c1814d721268 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Prepare
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6281 unused Assets / (4.4 MB). Loaded Objects now: 7158.
-Memory consumption went from 177.3 MB to 172.9 MB.
-Total: 167.397600 ms (FindLiveObjects: 2.554300 ms CreateObjectMapping: 0.688700 ms MarkObjects: 159.022600 ms  DeleteObjects: 4.948100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 72.544314 seconds.
-  path: Assets/scripts/ScoreManager.cs
-  importAddress: Guid(f9a8e9131a926cf4f9450a06bb2a5815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/ScoreManager.cs using Guid(f9a8e9131a926cf4f9450a06bb2a5815) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f7a413dbd1c4fcaede1c1ca1b5237bd6') in 0.0125244 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=81f6516ab674670317a316e6a5e88c33 DependenciesID=d90deece528d119cc4b2c410badc4fdb StaticDependenciesID=11603e9ec5b09754407b9e95c9444220 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6281 unused Assets / (5.1 MB). Loaded Objects now: 7158.
-Memory consumption went from 177.3 MB to 172.2 MB.
-Total: 71.375900 ms (FindLiveObjects: 3.862900 ms CreateObjectMapping: 1.509200 ms MarkObjects: 57.747000 ms  DeleteObjects: 8.251900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 215.153599 seconds.
-  path: Assets/scripts/ScoreManager.cs
-  importAddress: Guid(f9a8e9131a926cf4f9450a06bb2a5815) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/scripts/ScoreManager.cs using Guid(f9a8e9131a926cf4f9450a06bb2a5815) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '11d6ca280849c4d5c3beb983175791a7') in 0.4254842 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a881eab54fdab6920719fc685523e027 DependenciesID=4a0595aa92153bd1c2a2580099f47694 StaticDependenciesID=b5436744ed0e58ca402c789629d75bcd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.279 seconds
-Domain Reload Profiling: 5369ms
-	BeginReloadAssembly (1892ms)
-		DisableScriptedObjects (123ms)
-		ReleaseScriptingObjects (7ms)
-		CreateAndSetChildDomain (880ms)
-	RebuildCommonClasses (70ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (229ms)
-	LoadAllAssembliesAndSetupDomain (1880ms)
-		LoadAssemblies (1314ms)
-		AnalyzeDomain (886ms)
-			TypeCache.Refresh (164ms)
-				TypeCache.ScanAssembly (9ms)
-			BuildScriptInfoCaches (657ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (1280ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (267ms)
-			ProcessInitializeOnLoadAttributes (540ms)
-			ProcessInitializeOnLoadMethodAttributes (102ms)
-			AfterProcessingInitializeOnLoad (9ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6287 unused Assets / (4.3 MB). Loaded Objects now: 7161.
-Memory consumption went from 177.1 MB to 172.9 MB.
-Total: 11.739800 ms (FindLiveObjects: 0.949800 ms CreateObjectMapping: 0.661000 ms MarkObjects: 6.685000 ms  DeleteObjects: 3.442100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.802 seconds
-Domain Reload Profiling: 1705ms
-	BeginReloadAssembly (246ms)
-		DisableScriptedObjects (8ms)
-		CreateAndSetChildDomain (56ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (82ms)
-	LoadAllAssembliesAndSetupDomain (514ms)
-		LoadAssemblies (416ms)
-		AnalyzeDomain (212ms)
-			TypeCache.Refresh (10ms)
-			BuildScriptInfoCaches (189ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (803ms)
-		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (168ms)
-			ProcessInitializeOnLoadAttributes (336ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
-			AfterProcessingInitializeOnLoad (10ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6287 unused Assets / (5.0 MB). Loaded Objects now: 7164.
-Memory consumption went from 180.6 MB to 175.6 MB.
-Total: 16.029000 ms (FindLiveObjects: 1.613100 ms CreateObjectMapping: 1.040500 ms MarkObjects: 7.132200 ms  DeleteObjects: 6.240700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 107.063936 seconds.
-  path: Assets/scripts/ScoreManager.cs
-  importAddress: Guid(f9a8e9131a926cf4f9450a06bb2a5815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/ScoreManager.cs using Guid(f9a8e9131a926cf4f9450a06bb2a5815) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f9ae6fe5203e9abed714655c491dfde5') in 0.0234751 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=81f6516ab674670317a316e6a5e88c33 DependenciesID=c086f666838ed99d21d5302b6f804879 StaticDependenciesID=57f06e4b40d6dd794bec66f6479131ed 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

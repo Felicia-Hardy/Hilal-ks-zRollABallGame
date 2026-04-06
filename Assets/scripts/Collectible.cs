@@ -3,20 +3,31 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     public AudioClip collectSound;
+    public ParticleSystem shineEffect;
+
+    private Renderer rend;
+
+    void Start()
+    {
+        rend = GetComponent<Renderer>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            GameObject audioObj = new GameObject("TempAudio");
-            AudioSource audioSource = audioObj.AddComponent<AudioSource>();
+            // PARLAMA
+            if (shineEffect != null)
+            {
+                Instantiate(shineEffect, transform.position, Quaternion.identity);
+            }
 
-            audioSource.clip = collectSound;
-            audioSource.volume = 1f;
-            audioSource.spatialBlend = 0f; 
-            audioSource.Play();
+            // SES
+            if (collectSound != null)
+            {
+                AudioSource.PlayClipAtPoint(collectSound, Camera.main.transform.position);
+            }
 
-            Destroy(audioObj, 2f);
             Destroy(gameObject);
         }
     }
