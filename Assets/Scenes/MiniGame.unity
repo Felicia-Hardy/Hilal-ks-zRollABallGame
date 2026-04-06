@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 267006456}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -639,6 +639,41 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b96fc74c65fd9db40bfde7740f7a9d17, type: 3}
+--- !u!1 &472810041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472810042}
+  m_Layer: 0
+  m_Name: DiamondParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472810042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472810041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.57, y: 0.65, z: 14.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 955729971}
+  - {fileID: 1546774021}
+  - {fileID: 1219283060}
+  - {fileID: 1370658436}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &562876267 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b96fc74c65fd9db40bfde7740f7a9d17, type: 3}
@@ -889,6 +924,8 @@ GameObject:
   m_Component:
   - component: {fileID: 955729971}
   - component: {fileID: 955729970}
+  - component: {fileID: 955729972}
+  - component: {fileID: 955729973}
   m_Layer: 0
   m_Name: diamond 1
   m_TagString: Untagged
@@ -964,12 +1001,45 @@ Transform:
   m_GameObject: {fileID: 955729969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.86309123, z: -0, w: 0.5050481}
-  m_LocalPosition: {x: 15.02, y: 0.73, z: -15.04}
+  m_LocalPosition: {x: -0.54999924, y: 0.08000004, z: -29.67}
   m_LocalScale: {x: 0.21511, y: 0.21511, z: 0.21511}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 472810042}
   m_LocalEulerAnglesHint: {x: 0, y: 119.331, z: 0}
+--- !u!65 &955729972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955729969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.240001, y: 10.24, z: 0.20000033}
+  m_Center: {x: -0.0000076293945, y: 0, z: 0.0000076293945}
+--- !u!114 &955729973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955729969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d752b6c2a6fbd41a9c7a136bc80040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectible
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,6 +1409,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1219283060}
   - component: {fileID: 1219283059}
+  - component: {fileID: 1219283061}
+  - component: {fileID: 1219283062}
   m_Layer: 0
   m_Name: diamond 3
   m_TagString: Untagged
@@ -1414,12 +1486,45 @@ Transform:
   m_GameObject: {fileID: 1219283058}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.37762576, z: -0, w: 0.92595834}
-  m_LocalPosition: {x: -13.27, y: 1.04, z: 13.87}
+  m_LocalPosition: {x: -28.84, y: 0.39, z: -0.7600002}
   m_LocalScale: {x: 0.27168, y: 0.27168, z: 0.27168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 472810042}
   m_LocalEulerAnglesHint: {x: 0, y: -44.373, z: 0}
+--- !u!65 &1219283061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219283058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.24, y: 10.24, z: 0.2000003}
+  m_Center: {x: -0.0000038146973, y: 0, z: 0}
+--- !u!114 &1219283062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219283058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d752b6c2a6fbd41a9c7a136bc80040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectible
 --- !u!4 &1246720393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b96fc74c65fd9db40bfde7740f7a9d17, type: 3}
@@ -1435,6 +1540,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1370658436}
   - component: {fileID: 1370658435}
+  - component: {fileID: 1370658437}
+  - component: {fileID: 1370658438}
   m_Layer: 0
   m_Name: diamond 4
   m_TagString: Untagged
@@ -1509,13 +1616,46 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370658434}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.024996527, y: 0.48466647, z: -0.010873409, w: 0.87427413}
-  m_LocalPosition: {x: 15.57, y: 0.65, z: 14.63}
+  m_LocalRotation: {x: 0.024996528, y: 0.4846665, z: -0.01087341, w: 0.8742742}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1444, y: 0.1444, z: 0.1444}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 472810042}
   m_LocalEulerAnglesHint: {x: 3.11, y: 58.013, z: 0.299}
+--- !u!65 &1370658437
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370658434}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.24, y: 10.24, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1370658438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370658434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d752b6c2a6fbd41a9c7a136bc80040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectible
 --- !u!1001 &1479655470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1593,6 +1733,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1546774021}
   - component: {fileID: 1546774020}
+  - component: {fileID: 1546774022}
+  - component: {fileID: 1546774023}
   m_Layer: 0
   m_Name: diamond 2
   m_TagString: Untagged
@@ -1668,12 +1810,45 @@ Transform:
   m_GameObject: {fileID: 1546774019}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.43947363, z: -0, w: 0.8982555}
-  m_LocalPosition: {x: -13.42, y: 1.35, z: -13.4}
+  m_LocalPosition: {x: -28.99, y: 0.70000005, z: -28.029999}
   m_LocalScale: {x: 0.27168, y: 0.27168, z: 0.27168}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 472810042}
   m_LocalEulerAnglesHint: {x: 0, y: 52.141, z: 0}
+--- !u!65 &1546774022
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546774019}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.240001, y: 10.24, z: 0.20000033}
+  m_Center: {x: -0.0000038146973, y: 0.00000047683716, z: 0}
+--- !u!114 &1546774023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546774019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d752b6c2a6fbd41a9c7a136bc80040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectible
 --- !u!1001 &1549325324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1956,7 +2131,4 @@ SceneRoots:
   - {fileID: 321481882}
   - {fileID: 267006454}
   - {fileID: 919427119}
-  - {fileID: 955729971}
-  - {fileID: 1546774021}
-  - {fileID: 1219283060}
-  - {fileID: 1370658436}
+  - {fileID: 472810042}

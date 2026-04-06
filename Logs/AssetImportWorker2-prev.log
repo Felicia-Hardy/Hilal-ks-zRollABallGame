@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.1f1 (8535861f39e1) revision 8729990'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom" at "2026-04-06T19:08:16.1566869Z"
 OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'tr' Physical Memory: 7971 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-06T19:08:16Z
+Date: 2026-04-06T20:41:37Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom" at "2026-04-06T20:41:37.8793008Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.1f1\Editor\Unity.exe
@@ -19,7 +19,9 @@ C:/Users/hilom/My project (1)
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-60537
+64981
+-licensingIpc
+LicenseClient-hilom
 -force-d3d12
 -job-worker-count
 5
@@ -66,12 +68,12 @@ C:/Users/hilom/My project (1)
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [9692]  Target information:
+Player connection [10960]  Target information:
 
-Player connection [9692]  * "[IP] 192.168.1.44 [Port] 0 [Flags] 2 [Guid] 2682746213 [EditorId] 2682746213 [Version] 1048832 [Id] WindowsEditor(7,selene) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [10960]  * "[IP] 192.168.1.44 [Port] 0 [Flags] 2 [Guid] 2349007150 [EditorId] 2349007150 [Version] 1048832 [Id] WindowsEditor(7,selene) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [9692] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [9692] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10960] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [10960] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -83,7 +85,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 14.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 20.06 ms, found 3 plugins.
 Initialize engine version: 6000.4.1f1 (8535861f39e1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/hilom/My project (1)/Assets
@@ -102,50 +104,52 @@ Direct3D:
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-hilom"
 [Licensing::IpcConnector] LicenseClient-hilom channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1" at "2026-04-06T19:08:18.4043113Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1" at "2026-04-06T20:41:40.4857907Z"
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007412 seconds.
+Registered in 0.132653 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              32d201e9960a41eaa68bb90b5ab1a6c8
+  Correlation Id:          d40b30d8ce30f99ceb33ae49c23a836c
+  External correlation Id: 2185871968874255650
+  Machine Id:              XKxCPiat0Kuau2Vir2mc3JKSD2A=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-hilom-6000.4.1" (connect: 0.00s, validation: 0.01s, handshake: 6.66s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1-notifications" at "2026-04-06T20:41:47.173999Z"
+[Licensing::Module] Licensing Background thread has ended after 9.32s
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              f9ede435a06e41c89bae26469b164fc1
-  Correlation Id:          a7f5dc5d68cfa6eef7128ec989d48bf7
-  External correlation Id: 1261768027307203699
-  Machine Id:              XKxCPiat0Kuau2Vir2mc3JKSD2A=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-hilom-6000.4.1" (connect: 0.02s, validation: 0.04s, handshake: 2.44s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1-notifications" at "2026-04-06T19:08:20.8921657Z"
-[Licensing::Module] Licensing Background thread has ended after 4.74s
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.891 seconds
-Domain Reload Profiling: 2120ms
-	BeginReloadAssembly (380ms)
-	RebuildCommonClasses (109ms)
-	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (259ms)
-	LoadAllAssembliesAndSetupDomain (443ms)
-		LoadAssemblies (372ms)
-		AnalyzeDomain (423ms)
-			TypeCache.Refresh (419ms)
-				TypeCache.ScanAssembly (382ms)
-	FinalizeReload (895ms)
+- Finished resetting the current domain, in  0.766 seconds
+Domain Reload Profiling: 5807ms
+	BeginReloadAssembly (481ms)
+		CreateAndSetChildDomain (8ms)
+	RebuildCommonClasses (175ms)
+	RebuildNativeTypeToScriptingClass (63ms)
+	initialDomainReloadingComplete (2679ms)
+	LoadAllAssembliesAndSetupDomain (1640ms)
+		LoadAssemblies (532ms)
+		AnalyzeDomain (1321ms)
+			TypeCache.Refresh (1315ms)
+				TypeCache.ScanAssembly (1133ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (768ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (76ms)
-			BeforeProcessingInitializeOnLoad (180ms)
-			ProcessInitializeOnLoadAttributes (271ms)
-			ProcessInitializeOnLoadMethodAttributes (240ms)
+			InitializePlatformSupportModulesInManaged (87ms)
+			BeforeProcessingInitializeOnLoad (149ms)
+			ProcessInitializeOnLoadAttributes (212ms)
+			ProcessInitializeOnLoadMethodAttributes (162ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -185,6 +189,7 @@ Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Un
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 4.17 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -194,51 +199,824 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.420 seconds
-Domain Reload Profiling: 4994ms
-	BeginReloadAssembly (376ms)
-		DisableScriptedObjects (11ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (1820ms)
-	LoadAllAssembliesAndSetupDomain (1308ms)
-		LoadAssemblies (716ms)
-		AnalyzeDomain (809ms)
-			TypeCache.Refresh (674ms)
-				TypeCache.ScanAssembly (645ms)
-			BuildScriptInfoCaches (112ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1420ms)
+- Finished resetting the current domain, in  1.327 seconds
+Domain Reload Profiling: 5480ms
+	BeginReloadAssembly (873ms)
+		DisableScriptedObjects (46ms)
+		CreateAndSetChildDomain (88ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (916ms)
+	LoadAllAssembliesAndSetupDomain (2277ms)
+		LoadAssemblies (1668ms)
+		AnalyzeDomain (1130ms)
+			TypeCache.Refresh (957ms)
+				TypeCache.ScanAssembly (917ms)
+			BuildScriptInfoCaches (144ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1328ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (195ms)
-			ProcessInitializeOnLoadAttributes (535ms)
-			ProcessInitializeOnLoadMethodAttributes (133ms)
-			AfterProcessingInitializeOnLoad (47ms)
-		AwakeInstancesAfterBackupRestoration (58ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+			BeforeProcessingInitializeOnLoad (198ms)
+			ProcessInitializeOnLoadAttributes (433ms)
+			ProcessInitializeOnLoadMethodAttributes (120ms)
+			AfterProcessingInitializeOnLoad (9ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6286 unused Assets / (5.9 MB). Loaded Objects now: 7117.
-Memory consumption went from 166.3 MB to 160.4 MB.
-Total: 17.606400 ms (FindLiveObjects: 1.790700 ms CreateObjectMapping: 0.777400 ms MarkObjects: 7.714900 ms  DeleteObjects: 7.144000 ms)
+Unloading 6287 unused Assets / (6.0 MB). Loaded Objects now: 7118.
+Memory consumption went from 164.6 MB to 158.7 MB.
+Total: 18.611800 ms (FindLiveObjects: 2.455100 ms CreateObjectMapping: 1.185100 ms MarkObjects: 9.629700 ms  DeleteObjects: 5.142000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2243537.576452 seconds.
-  path: Assets/Assets_FenceChained/models/chainlink_barbwire-2.FBX
-  importAddress: Guid(32337b2ced4e84f419f3bc3231bb7a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets_FenceChained/models/chainlink_barbwire-2.FBX using Guid(32337b2ced4e84f419f3bc3231bb7a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8eba185c3b9e5c3b3fc6695a2e3561b8') in 1.139149 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4ff6fac25d10c746180caf3de545ceeb DependenciesID=e0bb0ee716104762ec666ac3b0252e57 StaticDependenciesID=f9c926f37cfe6f3a27d15476ae42f8e3 
+  Time since last request: 2249146.151669 seconds.
+  path: Assets/Scenes/MiniGame.unity
+  importAddress: Guid(482e10bec050010498760af64d5f8a2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/MiniGame.unity using Guid(482e10bec050010498760af64d5f8a2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '531744c54b44c98abe08f3dea73927f1') in 0.1917284 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=97eb626ce9d72f134502a597c2a90680 DependenciesID=881cbb43b945830ebdce4ffadf4eb102 StaticDependenciesID=6cfadb0f8e51e71e9a0636f334c55875 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (11).png
+  importAddress: Guid(540bdc739067ccd41b432ef46572a062) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (11).png using Guid(540bdc739067ccd41b432ef46572a062) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'aff004b9b9ee3fc09da68e80d9d1c3cb') in 0.16468 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f7cc2afde7e6d331572f412cb1b12bbe DependenciesID=f9f9b3549a9d483b71b0fc7876184d5d StaticDependenciesID=8da3f92669a2360ad6a8f2822cc30e9f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (23).png
+  importAddress: Guid(daee0914001f64c41b429c8c270f3da2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (23).png using Guid(daee0914001f64c41b429c8c270f3da2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '43f2e2290a032182454c13181ee1d061') in 0.0377323 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f0141310e5b0d020bf634900c618670c DependenciesID=9098df796c9f7900140aa514bda438c3 StaticDependenciesID=24d1370c535bfccf87e618a0c38a52bd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (8).png
+  importAddress: Guid(bca756bfdd6be5341aa9aac5e64f4294) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (8).png using Guid(bca756bfdd6be5341aa9aac5e64f4294) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b8a3626b9ba97b401212a54dc270839a') in 0.0359198 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4bff804c63a7a51582d377cf934dda23 DependenciesID=322f4257a5842517d103ef489bca27df StaticDependenciesID=7a2cd20cdebb93a06dd2f2326cdbdc5e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (18).png
+  importAddress: Guid(ab698dab9498c1f45914c3d1497d5648) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (18).png using Guid(ab698dab9498c1f45914c3d1497d5648) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd5fe08996762f9843f770822d2b38a9a') in 0.0389476 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f8591d6c964d3d54316bdc17d00797b8 DependenciesID=67cb6ab6d52043f8ad235c426c06dd05 StaticDependenciesID=2986b7bf1d3bb5268bf151591e12649d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (3).png
+  importAddress: Guid(631623504cc918346a96f6e1927d871f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (3).png using Guid(631623504cc918346a96f6e1927d871f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ba0ffc29a868bf8bc618d9e0744adba6') in 0.0374568 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1560b81ed5ea5ed06f99c63b96bcc743 DependenciesID=6f0b504e9085bc2c8c9787e1a9819957 StaticDependenciesID=928c197f0f46683126628324c5c25e56 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (16).png
+  importAddress: Guid(7cdf458ed74c54b4a9529131cdab9d8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (16).png using Guid(7cdf458ed74c54b4a9529131cdab9d8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '90def82181fd82a8459cd0f706e97f34') in 0.0427894 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5b916bad92c4f802e4cb493268572030 DependenciesID=704cc5e9dbbc9512c1c30dc229c0615b StaticDependenciesID=7b2ac2d8f872a9ed78c431bf3d5e6bd2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (21).png
+  importAddress: Guid(b10ede2a024b7f145b462dc082c44f6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (21).png using Guid(b10ede2a024b7f145b462dc082c44f6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c5f712f8a6848ee97a65468121cb0e49') in 0.0456877 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2139c3495c598615a4ad184ce054e20f DependenciesID=d15a9794461febddffd8e274302e8f11 StaticDependenciesID=1f1101f7b0b1508d93e3c339ae1493ee 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites
+  importAddress: Guid(835b4012d7b70dd4ca57eed8b33a4a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites using Guid(835b4012d7b70dd4ca57eed8b33a4a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b19c1ebb7f6f79d6c9a07c33e29e7216') in 0.6203602 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5f637540a15c454b8519ad7767f9a2d4 DependenciesID=f19c67d3084cc0e34db97775ea52c5f4 StaticDependenciesID=82c44f1ccc45f08bdc95a0f5f3427f16 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (5).png
+  importAddress: Guid(a4206ddecff414044940dc3b6d3d0674) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (5).png using Guid(a4206ddecff414044940dc3b6d3d0674) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e6840ce28e2b746476d901514a2732f6') in 0.5454283 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=51aada5318fd1877b57397ebcd0278cd DependenciesID=789e4c0164d0ceb433514d6e7a80138c StaticDependenciesID=fb601f60cfc7a99e73b67d7945bd28a5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 446.750551 seconds.
+  path: Assets/Ball Pack/Models/Atom Ball/Materials/Atom Ball Atom Sphere.mat
+  importAddress: Guid(5c353f7057da35640bdff38d63dda4d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Atom Ball/Materials/Atom Ball Atom Sphere.mat using Guid(5c353f7057da35640bdff38d63dda4d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1d2a2c0199b7722cd3cf72b464827969') in 1.081195 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dcae9a38352a6d2e99013920d54de2b5 DependenciesID=fc323d5321b73f0e0b3b0a1ff2d084e4 StaticDependenciesID=bf58ca001ef0e3ce32d5afc22323f7e6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001305 seconds.
+  path: Assets/Ball Pack/Prefabs/AtomBall.prefab
+  importAddress: Guid(6a43ca4885280844bb009563bd7d1dcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Prefabs/AtomBall.prefab using Guid(6a43ca4885280844bb009563bd7d1dcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f738c6ab72a721505059160175239c30') in 0.2104905 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3a07db1658f4f16f13c896aebc1e2313 DependenciesID=ec79fff6dcf656e019e2b2a7cad96b93 StaticDependenciesID=81ec2312fea3e511b902e6f5ab892c62 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball
+  importAddress: Guid(f0f52fb9d6b5dab4cb63380ee21af7d0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wheel Ball using Guid(f0f52fb9d6b5dab4cb63380ee21af7d0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9f9be3a3fe2cef2f9a024916213f3b46') in 0.0292459 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ed2bafbcc7eb8db13925101e2852dc9c DependenciesID=d405cd63603ce1a54a67a0cb32688ff7 StaticDependenciesID=165872d9b5cbfa5f6065de4714e61e8c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Ball Pack/ShowcaseSettings.lighting
+  importAddress: Guid(1b5ebaf685ffd0a45a2439eff665f574) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/ShowcaseSettings.lighting using Guid(1b5ebaf685ffd0a45a2439eff665f574) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)LightingSettings: switching bake backend from 2 to 1.
+ -> (Import Result ID: '5f1dcc4c968051eae46f7b9407b28f72') in 0.0935839 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4b1ed1ff5e4ee924f2b253b6ff3530b9 DependenciesID=6bea1a45395da19419c820399ca1cbea StaticDependenciesID=307aa2b41670e7244de08a79b7040c50 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Ball Pack/Models/Spike Ball
+  importAddress: Guid(56f82dc3ba910ad408cd29a80a061992) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Spike Ball using Guid(56f82dc3ba910ad408cd29a80a061992) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '63704158e0d97911edf439940ead3bcc') in 0.0178015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=75f2daf707bf2cac8a264302d77575da DependenciesID=376e8b1644fdb503274d2f265fe110d6 StaticDependenciesID=ef56e43becda20b2d46d7bb0e86085ef 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball/Textures
+  importAddress: Guid(dae3c13293d92074b9de4f9f4a1d7a9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wheel Ball/Textures using Guid(dae3c13293d92074b9de4f9f4a1d7a9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e4f5c5d1d325560b66ec645a623e6b16') in 0.0234219 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=49fd9c37fd110b4934016723564e574e DependenciesID=d5b29756261969b8f86244add296e468 StaticDependenciesID=d15c8dee30788def335eefef541e5692 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Ball Pack/Models/Spike Ball/Textures/SpikeBall - Occlusion.png
+  importAddress: Guid(4ec11fe9acb97494b80a02d20bd84af1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Spike Ball/Textures/SpikeBall - Occlusion.png using Guid(4ec11fe9acb97494b80a02d20bd84af1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '363c67d7adbaabcd7bc09bdf04b14f09') in 0.0663111 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=be8a16aac0202f0108a078738c13186e DependenciesID=45216d0e8335837fd22e82ee3a875949 StaticDependenciesID=26b2c46c2584f2765f48b48585e7e90a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Ball Pack/Models/Bomb Ball
+  importAddress: Guid(4b5d03c897df4c34ea73147c8b5d78aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Bomb Ball using Guid(4b5d03c897df4c34ea73147c8b5d78aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1e2c69e019a44c7cf54785cb2b7faebe') in 0.0257781 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fbd26927e10db9fcf7b298f296ea508c DependenciesID=1e02cfcaa7c5d6a8b6b7126ac814cf71 StaticDependenciesID=f014bdd61e2fc3fcfa495515a3595dc5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Ball Pack/Models/Bomb Ball/Textures
+  importAddress: Guid(1e2ea9b57af32164884a8155e71ce411) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Bomb Ball/Textures using Guid(1e2ea9b57af32164884a8155e71ce411) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1f604d508b6fe8f62f8b0bcbb3aef3ef') in 0.0190521 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b8b6fd34465330dc1c4eb8f511e6dfa7 DependenciesID=12eb006a748e3e32bb96d9b508d4a869 StaticDependenciesID=cde41037a104e7d95627acf0ccfa380d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Ball Pack/Prefabs/WheelBall.prefab
+  importAddress: Guid(64feaa7b7b780fb4f92198f6fb2e1bdb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Prefabs/WheelBall.prefab using Guid(64feaa7b7b780fb4f92198f6fb2e1bdb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3886e5e737f6a0f960acce57f08aaf94') in 0.563208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eebcf0d6f0493e90b70d14df950107ca DependenciesID=53560d063e6b3d20d16643e28d4fd888 StaticDependenciesID=cd995874e14b1947af3a5b57fac865bf 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Ball Pack/UI/Fade Gradient.png
+  importAddress: Guid(33f57b489f478ac439f3df7f51dd662e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/UI/Fade Gradient.png using Guid(33f57b489f478ac439f3df7f51dd662e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6f231361eed4d7ea6bd6496220c1a99b') in 0.0473815 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b5049835e4570c783f4a1d2fa923ea6a DependenciesID=f2f673ced2411005e7001b440e666381 StaticDependenciesID=cf431e0d24be39ef7d07a4395e8898f0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris.png
+  importAddress: Guid(581f4764538f11945b623fa91ac5ec85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris.png using Guid(581f4764538f11945b623fa91ac5ec85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ab88cacb6db01242da868b39a1aca30d') in 0.0453823 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=720c80907e9a55f0785ea5a382255d83 DependenciesID=3994faab448d83e2f7e0b10d8798a2ca StaticDependenciesID=104e55c21a7b5660a942708951be60de 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Ball Pack/Prefabs/WoodenBall.prefab
+  importAddress: Guid(325dfdd9dab0e8f478b599780abdbd57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Prefabs/WoodenBall.prefab using Guid(325dfdd9dab0e8f478b599780abdbd57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '59fc85f09f5c7748b4c7ea921b5f46ef') in 0.0407535 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ca0750d13b4eb3a76e6260720d403b6b DependenciesID=857fa6c39284189aed7c6e3870790a56 StaticDependenciesID=58dfa4de51135c1bcb15b54d24dea4c3 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Assets_FenceChained/models/chainlink_single.FBX
-  importAddress: Guid(73c2999be80b3be4e816d348fea624e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets_FenceChained/models/chainlink_single.FBX using Guid(73c2999be80b3be4e816d348fea624e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dfabdf15065e04475c46630a3ce7f320') in 0.0723809 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f085b75f6808cc361b9b601dd7da16d1 DependenciesID=cf5345247d1810a22b50a6cf8d76d590 StaticDependenciesID=057df8e807ec302c6d09ab1667ede781 
+  Time since last request: 0.000042 seconds.
+  path: Assets/Ball Pack/Models/Spike Ball/Materials/Spike Ball.mat
+  importAddress: Guid(056d79484fff9e84dafaa83f1d7ccbb1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Spike Ball/Materials/Spike Ball.mat using Guid(056d79484fff9e84dafaa83f1d7ccbb1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd8e0c6f5bded6e66d88e4d43e21f1079') in 0.2058184 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c102210f3ccd1b666378139bac74b148 DependenciesID=165937a50dc64a1f04ebc68716b6ba26 StaticDependenciesID=067cbcd70f38a71fae2266ca636eed65 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Materials/EyeBall - Simple.mat
+  importAddress: Guid(574a32f1fd43e0e498988286b3eeb64b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Eye Ball/Materials/EyeBall - Simple.mat using Guid(574a32f1fd43e0e498988286b3eeb64b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9918ff8d3c4209560923fd915496e0cf') in 0.0276406 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1aab9db06a567bae75a9d6c02acb3883 DependenciesID=9e76b47606aca0edec377ffeaa1c6cd7 StaticDependenciesID=28730494d33b694efd219a0dd04d1578 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball - Old/Textures/WheelBall - Old.png
+  importAddress: Guid(d1e116197624a1e49b72f535c7c8037b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wheel Ball - Old/Textures/WheelBall - Old.png using Guid(d1e116197624a1e49b72f535c7c8037b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3065b9bb083cf342f1fdd438b78d50f3') in 0.0229106 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8c0e02bdad81683e1025e5ff9432509a DependenciesID=bb1bfda414951e03643ac732dcf8d6be StaticDependenciesID=47f0ecdcba0e0c3f92d206eb5fb140d4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Ball Pack/Models/Bucky Ball/Materials/Bucky Ball.mat
+  importAddress: Guid(031501c1b2b84414d819f1b449251dd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Bucky Ball/Materials/Bucky Ball.mat using Guid(031501c1b2b84414d819f1b449251dd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c50c3c5217ce48e312befe77af50bb42') in 0.0152189 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8dc06a98dcae4a249ba6c615c2cb3b42 DependenciesID=42acae05a5627f340229488992f1dbcb StaticDependenciesID=d02beab58f6c1322dd1c0bab8c6df794 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Ball Pack/Models/Bomb Ball/Materials
+  importAddress: Guid(50e1f9d2802f62b4f8bfdd0ae0b8ba7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Bomb Ball/Materials using Guid(50e1f9d2802f62b4f8bfdd0ae0b8ba7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '56b6097e8a6ebed5964d16ca0c4b3a97') in 0.0163962 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=46f9a0694a29ec84bc2f9fef4d7fee35 DependenciesID=2c0836da103dbf23299ae48a82336cc3 StaticDependenciesID=04d82b5495807463f6095d6a8cd1b5f9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Ball Pack/Models/Atom Ball/Materials
+  importAddress: Guid(a7208012a14653d4d935aca8c8ca665c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Atom Ball/Materials using Guid(a7208012a14653d4d935aca8c8ca665c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '705512a82a6ad1ba940c169a6072cb4d') in 0.0158395 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d02be7d4d67d808436c12a765bfdc1ae DependenciesID=bf97f635cdfee3359da3cf977de2c921 StaticDependenciesID=eecc51653604a918562a462a88702433 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris 4.png
+  importAddress: Guid(367f4c980e7dc9e42bd037190280af9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris 4.png using Guid(367f4c980e7dc9e42bd037190280af9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '49647947c95fa631e73caaa8b63a40f1') in 0.0252547 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=88ae5f343bab08010624f2c27657dcf3 DependenciesID=3c91229d1deac12735cd42a90fd3fc28 StaticDependenciesID=e525df26c11141abb6c9308dbb52b7dc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall.png
+  importAddress: Guid(cd0ae13249cbc9c4dab2043eca83ae07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall.png using Guid(cd0ae13249cbc9c4dab2043eca83ae07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'db946ad575d9662fcd9eb25ffede0f8d') in 0.0213719 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c1fadc1e4ce417408f3b7154c0992277 DependenciesID=63770be4eee34b2752c4f2a7c763486c StaticDependenciesID=6b9e4c9dbd3b4b9d0f149f807b4abe1e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Materials/Wooden Ball.mat
+  importAddress: Guid(846721efcb18b9b459ce40b282e84240) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Materials/Wooden Ball.mat using Guid(846721efcb18b9b459ce40b282e84240) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '60f2f7df1c48fda67394ab1d6014ceb3') in 0.0422343 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a9c26f2addd052551b632c6460c7b41a DependenciesID=68870ce220258fb818d26a8cecab4302 StaticDependenciesID=d72b00afb4d23beeebad7884cbae8ab4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/WoodenBall.fbx
+  importAddress: Guid(61566139d5c1f844aaa682fa50106e58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wooden Ball/WoodenBall.fbx using Guid(61566139d5c1f844aaa682fa50106e58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '196a2aefafbfbdd9a4c2427103ec40f1') in 0.0760143 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4caf5fc627d3f673705934afc9f2ee20 DependenciesID=bc96a8d78a834da929aafbdca4eadf6c StaticDependenciesID=6074fbfa7b3552211b74cd5dbb79231d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ball Pack/Models/Atom Ball/Materials/Atom Ball Atom Lines.mat
+  importAddress: Guid(4c6ea6940a355434eb03c9c271744eca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Atom Ball/Materials/Atom Ball Atom Lines.mat using Guid(4c6ea6940a355434eb03c9c271744eca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '16d2f7cd5436615bacc2d9b679c5b5fe') in 0.0183419 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=935ae09142042474b4c096a899929dbc DependenciesID=f784d778d4059a683d5cf9c820d43d28 StaticDependenciesID=45e213b5b3a066d091293f1e2c58315b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Ball Pack
+  importAddress: Guid(3ce775489458dff4ab3d13bd2768969a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack using Guid(3ce775489458dff4ab3d13bd2768969a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ee454786241cccc6d997bc3cc1a5c420') in 0.0169908 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f8c8db84807788493ffe54055ca212bc DependenciesID=0049022a1d165195ea2856312f154cb0 StaticDependenciesID=80fb2307b420ec4f8d105d7e0df6b9bf 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Ball Pack/Models/Atom Ball
+  importAddress: Guid(6086d5cf050f6f1428c7ba048fd52a86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Atom Ball using Guid(6086d5cf050f6f1428c7ba048fd52a86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5ec8731e9d30794693ae89a63b043cc6') in 0.0183102 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eee9f37161ba36e95916a4558f410f7a DependenciesID=b7e1173db5d8319b10fa694d23cfd61e StaticDependenciesID=7387502d281e3d54f6739284b548fe18 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris - Occlusion.png
+  importAddress: Guid(6eb9f610a249b19459e3e5001cf9e9ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris - Occlusion.png using Guid(6eb9f610a249b19459e3e5001cf9e9ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9467cf7caf31d3c8040c696bc170e287') in 0.0213721 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d7105d55c05747b4247a356948adb692 DependenciesID=0f4b6d8e865a35e6a849d3cdf2818c3c StaticDependenciesID=d3b7f7d1e1bbe22c4a47d19f91f845fd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball/Materials
+  importAddress: Guid(62f1a75dc9363c74aa2911f3595bdfa6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wheel Ball/Materials using Guid(62f1a75dc9363c74aa2911f3595bdfa6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e292d73eb7988ce5cecf002c5f51d5cd') in 0.0156004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5e61e6c925f29ac6e1fceae9f3ce231b DependenciesID=b8f7cf7cf49b84b8ed84a89437f014f4 StaticDependenciesID=a42636891b42883f0d70835d8ca2b6ce 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball/Textures/WheelBall - Bump.png
+  importAddress: Guid(6e9a1e6c2a3e8d949834b08ae0994d1e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wheel Ball/Textures/WheelBall - Bump.png using Guid(6e9a1e6c2a3e8d949834b08ae0994d1e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5b77aee37334d6e387ab504fcda9a2c9') in 0.0397496 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c4ddf26287c11474e0b7d3228e73d6e7 DependenciesID=a94ad03df914ac58a7e65982c7e3200d StaticDependenciesID=2328207d1d49fc6e2e8d15baccc9a79b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Textures/WoodenBall - Grayscale.png
+  importAddress: Guid(af391f08752851541aa28e8e2873f5fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Textures/WoodenBall - Grayscale.png using Guid(af391f08752851541aa28e8e2873f5fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '145b6a9a0450111dc0bfa879101ba21d') in 0.0254531 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0b0ba56af4b669944d797119ea8aadf9 DependenciesID=25608712210b82e0b3693a82a495eae1 StaticDependenciesID=929cefcdf3d269195bf5dc943c47cdb6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Ball Pack/Models/Spike Ball/Textures
+  importAddress: Guid(5f5f606c0a022534789358721c7fa9de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Spike Ball/Textures using Guid(5f5f606c0a022534789358721c7fa9de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5b9e384ee6036ce43772c78427ddcb88') in 0.0153762 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b78e030a9528f10f3f6f444b960a4206 DependenciesID=b5934f221d0e6eeb67a4ca4bd1febcc8 StaticDependenciesID=60191d52cf911f2bde271d0f9b4bad40 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Ball Pack/Models/Bucky Ball/Materials
+  importAddress: Guid(cf6da438db951d842ae0e37fbe3daae8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Bucky Ball/Materials using Guid(cf6da438db951d842ae0e37fbe3daae8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '582e5facfa13f7b08b757af967937f6f') in 0.0168276 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0f987db1b53c75ff38008e17512ec12a DependenciesID=223183aa3935d2ca65b9ff993646450a StaticDependenciesID=87237618ec46e64f69f7b369ac674ba9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Ball Pack/Prefabs/BuckyBall.prefab
+  importAddress: Guid(12ab7dfd39045c04a914a2ac9e59b02f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Prefabs/BuckyBall.prefab using Guid(12ab7dfd39045c04a914a2ac9e59b02f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3b6b927a1702a4a74238324af52d306b') in 0.0225607 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7d581c6f1fa3d6b16a49f1db3e7681eb DependenciesID=5276289b3cbc90bbdc1e0940eb67aacc StaticDependenciesID=c03a561d1c911ae75c8738c9ebdc2de5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris - Diffuse.png
+  importAddress: Guid(cbefb4f983d64bd42a523e1867f72452) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris - Diffuse.png using Guid(cbefb4f983d64bd42a523e1867f72452) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bacbe7e576ea31b80ced044337a999aa') in 0.0246588 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=784e64c8a556b89a8b20a3d3857c128a DependenciesID=e78361ede34b5421bc73d575bb803af2 StaticDependenciesID=6b352657f64f776e6b4c9817fea79dbe 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Ball Pack/Models/Spike Ball/Materials
+  importAddress: Guid(06bb385f40760b64db932a9ad8f8a5b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Spike Ball/Materials using Guid(06bb385f40760b64db932a9ad8f8a5b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8a4b3114cdc810def2a20f57d27983ed') in 0.0435173 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b8e43041c7ab73ddbacdb2ca3e6b0253 DependenciesID=093f5b3beaf7c99bf505e1a81e15b909 StaticDependenciesID=997fe21e5d2ec2207cd64d8ba7cda61a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall White - Bump.png
+  importAddress: Guid(6def427add1f72041aa5bfac9c07038c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall White - Bump.png using Guid(6def427add1f72041aa5bfac9c07038c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ed12e3c6a73e79d4575c744cd56ff94a') in 0.0265473 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ca73ec81c0960da1888132d0dfcd7fb4 DependenciesID=7a9f5b298151ee05f5d452adcab42e61 StaticDependenciesID=e559ae9ae764b7fb56035775099746f2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Ball Pack/Prefabs
+  importAddress: Guid(9a229b686ac0a504d9be03aa0ff784a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Prefabs using Guid(9a229b686ac0a504d9be03aa0ff784a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7488c971c80824236185162986c77065') in 0.013644 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3176e3cbbb962234773116364447a0cd DependenciesID=8ad6cf98c0d1227e4da87d9ec1a20d8f StaticDependenciesID=0e8417f49a4e59966f8e565ad7757bfd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Ball Pack/Models/Spike Ball/Textures/SpikeBall - Metal.png
+  importAddress: Guid(88cf2b3a2ad033740a53b6b3a9d045da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Spike Ball/Textures/SpikeBall - Metal.png using Guid(88cf2b3a2ad033740a53b6b3a9d045da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5fcc416301115ed3a26d49412bba5711') in 0.0227565 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=16bc84d63193c9c75c59f21ed69bed09 DependenciesID=779f6d244f0b4fd9dcb7e912c65bf2c1 StaticDependenciesID=098e2743b9a6acdc493706dbb5512adb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Materials/EyeBall Iris.mat
+  importAddress: Guid(c02ec0fa0ca2b5447b9d40c6e02bf5e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Eye Ball/Materials/EyeBall Iris.mat using Guid(c02ec0fa0ca2b5447b9d40c6e02bf5e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dcc1a7c62f6ebe69d6a167f589d6aa5d') in 0.0486994 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9262d98d81319e77d5ab706fac815721 DependenciesID=c6c902e2f6aaa241fcf5e191eeba004a StaticDependenciesID=3612d8edfab36e51a308a9dbba0c13d9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Ball Pack/Models/Split Metal Ball/Materials/Split Metal Ball.mat
+  importAddress: Guid(6a15b1f15432b6f4b9a8066e1e6ca4df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Split Metal Ball/Materials/Split Metal Ball.mat using Guid(6a15b1f15432b6f4b9a8066e1e6ca4df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4ff0681a94d47c92d9e28f9a3e6b5ae1') in 0.055104 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fb30b4f54afb126ac5fd167d720c0d02 DependenciesID=b3a3a56ecebc394221a065cb0f968be8 StaticDependenciesID=8a48fc9d01b35ab904baf5141b9c495c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Materials
+  importAddress: Guid(fa7b0412e5c244f4188d9ac6a11963e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Materials using Guid(fa7b0412e5c244f4188d9ac6a11963e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ca5c504a251203c0679e07d18777bc62') in 0.0248623 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=448fc92ac33fcd58207f853a9bd9ec85 DependenciesID=ab598f35647432470fc7a0306a964c29 StaticDependenciesID=ae83ef382b8925c20cb9c8e509897e52 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball/Textures/WheelBall - Diffuse.png
+  importAddress: Guid(52bc5ea17b2e78a43a63eb658111c0d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wheel Ball/Textures/WheelBall - Diffuse.png using Guid(52bc5ea17b2e78a43a63eb658111c0d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c2a81d644e6dbaee49ad08285b397cb8') in 0.0539416 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d772cf8333d0855e956c6263c71a2564 DependenciesID=77b2fd3ef95c4c1632be0599f6af6fec StaticDependenciesID=68786e92be7fe1d1e21a2ee37690fb8e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Ball Pack/Prefabs/BombBall.prefab
+  importAddress: Guid(3b5a28db09a60f0479da5f8cdf8d7039) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Prefabs/BombBall.prefab using Guid(3b5a28db09a60f0479da5f8cdf8d7039) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '90055b9fa9f00a84f6b1f1c95fee4e17') in 0.0361958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3cb2c51cadec01d83406c26ddfad9c4e DependenciesID=5fe8bb5d7ab67350c007042354a4ab9a StaticDependenciesID=4033e3dd7d421b6d6a4ee0210ecdd885 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Ball Pack/Prefabs/EyeBall.prefab
+  importAddress: Guid(da98780e533fe794aa83fa27bbfddf57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Prefabs/EyeBall.prefab using Guid(da98780e533fe794aa83fa27bbfddf57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '30102f7ce48894291ca0585591726d83') in 0.0418604 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0a5edebef2432e825a052dde451d03cf DependenciesID=92c79d284f1b8f7a3d3d2df0f0b88588 StaticDependenciesID=0389f351f25a3f6588934b3dfd186760 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Ball Pack/Prefabs/WheelBall - Old.prefab
+  importAddress: Guid(9507ca9f6e3797a47a8af6ca90f12748) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Prefabs/WheelBall - Old.prefab using Guid(9507ca9f6e3797a47a8af6ca90f12748) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'edbc22fe2c0305a7039f9dc8d9f61800') in 0.0275668 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3076542654329334a59b458e6f232db4 DependenciesID=b9f594cb41ae62d57def733f4c133703 StaticDependenciesID=e1ad84143839ca4a7144bbef42aa0a78 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.070710 seconds.
+  path: Assets/Ball Pack/Models
+  importAddress: Guid(7e9d83179b3618645bd6db13a642a170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models using Guid(7e9d83179b3618645bd6db13a642a170) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bc61b0008849a8f3b40153892c040f24') in 0.0052656 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1eae452984035b4d1333a7c64e781012 DependenciesID=d2cde4958e805060f84f23c0d96d4ee3 StaticDependenciesID=23535efa9c6b27fc7dd3068f4540d465 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.110361 seconds.
+  path: Assets/Ball Pack/Models/Atom Ball/AtomBall.fbx
+  importAddress: Guid(4a1142b17f64bbc40871f76529421f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Atom Ball/AtomBall.fbx using Guid(4a1142b17f64bbc40871f76529421f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bda02f0f46fe92edfef57e275c8b12dd') in 1.5873774 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9a8e8ebcab1c52eef65b209b5cd62de0 DependenciesID=acc6153a410ca50289df46856f6a3df4 StaticDependenciesID=56513e11a3d52e647b37105ab48d10d0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.735689 seconds.
+  path: Assets/Ball Pack/Prefabs
+  importAddress: Guid(9a229b686ac0a504d9be03aa0ff784a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Prefabs using Guid(9a229b686ac0a504d9be03aa0ff784a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ee3f1f6ed5c618f1004f44392ab0f2c4') in 0.0013894 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2a2d0acc1828a39ce1469ef955c8aa1d DependenciesID=0d0f92017d3283c942e91ad26fdf8d21 StaticDependenciesID=e9adec0d878cf2158e6511dbdcee172a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016740 seconds.
+  path: Assets/Ball Pack/Prefabs/AtomBall.prefab
+  importAddress: Guid(6a43ca4885280844bb009563bd7d1dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Prefabs/AtomBall.prefab using Guid(6a43ca4885280844bb009563bd7d1dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '450cc8fb37f85fc0cc0b370c4f6dabae') in 0.0513428 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=11a8bff25d74a0930f05bbf80f591851 DependenciesID=36dadb85cff6c2f6e69d59093ee05528 StaticDependenciesID=98242e058553477679e45b880d73714b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Ball Pack/Prefabs/SplitMetalBall.prefab
+  importAddress: Guid(640b1c008119192418bb742524f946d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Prefabs/SplitMetalBall.prefab using Guid(640b1c008119192418bb742524f946d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '730b247285ee9ab370d557c53c7d2545') in 0.0549457 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0625f603064f7e23c23aff4d17c57c53 DependenciesID=1c802e47dd9873d2d7f1a2454d555cdb StaticDependenciesID=c80aaecbb4b3a186abcf542747bb856d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Ball Pack/Prefabs/WheelBall.prefab
+  importAddress: Guid(64feaa7b7b780fb4f92198f6fb2e1bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Prefabs/WheelBall.prefab using Guid(64feaa7b7b780fb4f92198f6fb2e1bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '19fdedf335d0f3daaba3843d1b197792') in 0.0634043 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cfe826b832bc02933c12ca3a498ccd93 DependenciesID=46946fe2e2b545c0476d0c350d047809 StaticDependenciesID=18cbef557ae69bf437c96e73656b48d3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.532260 seconds.
+  path: Assets/Ball Pack/UI
+  importAddress: Guid(0647a0f53e3fa1b4e82e29a0fc1d83b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/UI using Guid(0647a0f53e3fa1b4e82e29a0fc1d83b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f48be777aee9411db6f21a236d1bf959') in 0.0014972 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f319ef40653bb3c9fdd63b803418bfb6 DependenciesID=8dfc4e1738eaeab775d67b100b90cd45 StaticDependenciesID=486be55bdf803e50f0cbb0f0eb7115ee 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Ball Pack/UI/Fade Gradient.png
+  importAddress: Guid(33f57b489f478ac439f3df7f51dd662e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/UI/Fade Gradient.png using Guid(33f57b489f478ac439f3df7f51dd662e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '093df2afc1b0f7a96fe9654364107d78') in 0.0741996 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=898af858ee9f0a5bf98dae6574201f7a DependenciesID=c44bbffc9d703f98e839d0e2e713bac6 StaticDependenciesID=c8d0dd25a2fa97a27be6ff69f51be536 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.830275 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball
+  importAddress: Guid(e9eded04223b0ba45ae266e36f837c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Eye Ball using Guid(e9eded04223b0ba45ae266e36f837c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a9a751248dadf62f6bac6339c660b141') in 0.0013208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=55d6435d7e793aa908e9fd7e81243a81 DependenciesID=e092ca39daf8edf283e1c3f42065832a StaticDependenciesID=d7b09c1eb8ce48e202d704f6cab4d3a0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026097 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/EyeBall.fbx
+  importAddress: Guid(5f603b8c73c81724b9bdc1c65764eb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Eye Ball/EyeBall.fbx using Guid(5f603b8c73c81724b9bdc1c65764eb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e02ba1628487bbe58a9688acd7c01597') in 0.2078153 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=71ea00fef82d5c6302fa7bffee654ed8 DependenciesID=a0a46fef9aa60bbafd0133935e34d8c5 StaticDependenciesID=32756d63edb2128d2627af4ef6d39945 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.585761 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures
+  importAddress: Guid(96e42f61af1806643b9be7e69505ec66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures using Guid(96e42f61af1806643b9be7e69505ec66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9ad964b2967c839b3887684f7f0904bf') in 0.0014997 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=35cda53c112b4b1e6d1d2f712634ef41 DependenciesID=972b952a5169468b8ce6573747d7a815 StaticDependenciesID=b6aa8832de526287fb16bfb47ced4e0a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055798 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall.png
+  importAddress: Guid(cd0ae13249cbc9c4dab2043eca83ae07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall.png using Guid(cd0ae13249cbc9c4dab2043eca83ae07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4b9d7ced29e89b15ec3394f4d9b23d90') in 0.0280177 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f9429e786cb858124c5a3378b20c675a DependenciesID=312277d709326e2fd5c8ef15dd2ee369 StaticDependenciesID=a41b055245914738675dd42736fcb9ff 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris - Occlusion.png
+  importAddress: Guid(6eb9f610a249b19459e3e5001cf9e9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall Iris - Occlusion.png using Guid(6eb9f610a249b19459e3e5001cf9e9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '42d3a942cfd4840f567958c778671f95') in 0.0371667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b04aea190437f544f58e5fce7f61ec67 DependenciesID=7d70d6c208155cda7d1774b118852b52 StaticDependenciesID=0eba238b3ad587ac57c6e7bd69376ec4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall White - Bump.png
+  importAddress: Guid(6def427add1f72041aa5bfac9c07038c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Eye Ball/Textures/EyeBall White - Bump.png using Guid(6def427add1f72041aa5bfac9c07038c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4db5af35017b0f203eee5197a6c4f2b5') in 0.0506555 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3f26a2f11ef1badd830c4d68eb43fc5d DependenciesID=a5dc697959e6c2bf05bbd49bbb8803d3 StaticDependenciesID=ff3d9adf215c6ffed1e07efc53eb5314 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.361170 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball
+  importAddress: Guid(96ca6be70a3cb6e4e9852672beabc506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wooden Ball using Guid(96ca6be70a3cb6e4e9852672beabc506) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '61a9b582fe181dfe6952d96762cf56c1') in 0.0327768 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e722d764202d9a626b4a43cc79449845 DependenciesID=b75abfce1ab917bb78a2a55e1d7ba889 StaticDependenciesID=4fe07c5a8821cd85f7004059a99d11c6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.377076 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/WoodenBall.fbx
+  importAddress: Guid(61566139d5c1f844aaa682fa50106e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wooden Ball/WoodenBall.fbx using Guid(61566139d5c1f844aaa682fa50106e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '50e3ea1fce67c7655542dae100386e21') in 0.1091204 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=390391c50e165dad9de3a7f47d5b66fd DependenciesID=4998e8728cbbd07073ebb729c39b0a77 StaticDependenciesID=1a02a57b332f85c446fdda22eebe56b1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.435132 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Textures
+  importAddress: Guid(4fad616280214854f8c456d5380c6d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Textures using Guid(4fad616280214854f8c456d5380c6d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f4244bc6f6e35775605232838fa6edc7') in 0.001273 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d5178ed4d75a2a2523d15e2953aa693b DependenciesID=0e489b49ef5e4f134449eb7206a2fe89 StaticDependenciesID=666e1926b9ba19bb2b473c841389379a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.158717 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Textures/WoodenBall - Bump.png
+  importAddress: Guid(1c7a4e28b7e27c4419c2214196fb3bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Textures/WoodenBall - Bump.png using Guid(1c7a4e28b7e27c4419c2214196fb3bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '000e47322dbfc6f91702731e6aa7db11') in 0.0294473 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fd1f320b3652ca14f47681d8d5b0477f DependenciesID=0c7e79984513fec24718da7caf903bc9 StaticDependenciesID=4bf3daac7ea738294ff54bc0e5b7ff3b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Textures/WoodenBall - Specular.png
+  importAddress: Guid(7f8b7ed9ed4f36b47a5d50f08b9bad53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Textures/WoodenBall - Specular.png using Guid(7f8b7ed9ed4f36b47a5d50f08b9bad53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ba77c9a7540ff88b87820e3fa5d183d4') in 0.0206295 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=741cafd32a5075561a61329ec92b420a DependenciesID=9fda52de3da2f9c039218d5357093432 StaticDependenciesID=cf8c773516ce31854dddf05357ea8202 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.777558 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Materials/WoodenBall - Specular.mat
+  importAddress: Guid(e9f54ea1202441245a5f06870ba1c73f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Materials/WoodenBall - Specular.mat using Guid(e9f54ea1202441245a5f06870ba1c73f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '908f3d743b23d38448287e7df74de654') in 0.0229064 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9fd54d0cdfec89974d1930b357af05f4 DependenciesID=9044cd1fc0c1fb868de00af25c390f71 StaticDependenciesID=517d58312446f0290ba9f1d4aaa71a15 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.833617 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Materials/WoodenBall - Grayscale.mat
+  importAddress: Guid(788330ad823cb0140aaa120bfe7a0fff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Materials/WoodenBall - Grayscale.mat using Guid(788330ad823cb0140aaa120bfe7a0fff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7f8f657d99f2f50ca98462434ba36620') in 0.0353683 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=985265793a7506fab823de435d278da7 DependenciesID=73524cc44ae951a42a75f39c4e8a29b9 StaticDependenciesID=bbc18d75e4c11288802feaed42080a2a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.524076 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Materials/WoodenBall - Diffuse.mat
+  importAddress: Guid(3d1a56f61af75364dbd69f61e340c2ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Materials/WoodenBall - Diffuse.mat using Guid(3d1a56f61af75364dbd69f61e340c2ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c9538fb1f834b7476ec093a61e89f86c') in 0.021234 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=000d52314bfa19668a75511553e55b44 DependenciesID=b4d68e6db1b375da6ae8f1c5604664d3 StaticDependenciesID=f76439b85375f40828e533e870c7a9f6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.252794 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Materials
+  importAddress: Guid(fa7b0412e5c244f4188d9ac6a11963e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Materials using Guid(fa7b0412e5c244f4188d9ac6a11963e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e9bdf40846618cbff2f7ebb7820b08a2') in 0.0014893 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=101fa8f0862ffe531caa7ef160de348c DependenciesID=6db3a77d49e3b26413afe33355d1e569 StaticDependenciesID=763b579ebdd878f9c0045e893cd71f65 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Materials/Wooden Ball.mat
+  importAddress: Guid(846721efcb18b9b459ce40b282e84240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Materials/Wooden Ball.mat using Guid(846721efcb18b9b459ce40b282e84240) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '70240f9c8c60cf4993ded22048fa94f9') in 0.0556385 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eddff53d922aec8f37c50c903f5d6c90 DependenciesID=bcf0f7d76a1c79704e4b87f1426159ea StaticDependenciesID=2cc377534dd6e5b2d20a17d40d0e4622 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Ball Pack/Models/Wooden Ball/Materials/WoodenBall - Specular.mat
+  importAddress: Guid(e9f54ea1202441245a5f06870ba1c73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wooden Ball/Materials/WoodenBall - Specular.mat using Guid(e9f54ea1202441245a5f06870ba1c73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '36cdd699714926958c4e3ebd30a623d2') in 0.029798 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f2cc34656ad2b48e3950270d3d910f8 DependenciesID=71dead76cfe3adc30fcdb61d6b7d6ba6 StaticDependenciesID=4ceee91726c0adf8a0ec672c3e932fc7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.280309 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball - Old
+  importAddress: Guid(0e21f755c9b17dd41aa7248dab4dd73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wheel Ball - Old using Guid(0e21f755c9b17dd41aa7248dab4dd73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '969fb1415f68a9c75bbab23af9b5de96') in 0.0009293 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4ca989dd3b72a7d13b947ad5778f2f42 DependenciesID=68bbd1b7c891928cf757fb495f4934b1 StaticDependenciesID=5a726fe5d86345f0d1af77e28fa5c762 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054196 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball - Old/WheelBall - Old.fbx
+  importAddress: Guid(74cbada03bcd41d49acec56746acf71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wheel Ball - Old/WheelBall - Old.fbx using Guid(74cbada03bcd41d49acec56746acf71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6acd061d4901a96bddc40a0adb37a9d4') in 0.0775514 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=15d8dd4f386f5d2d49ed70ca2656b7bf DependenciesID=39836747aef6f98e0e331e04bef4e332 StaticDependenciesID=aa9017381aa4e3b82498eef44179a52a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.790973 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball - Old/Textures
+  importAddress: Guid(0245a9ab8de8c6047949b6a472fea2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wheel Ball - Old/Textures using Guid(0245a9ab8de8c6047949b6a472fea2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6b479d612d1d06bf5dcfc53bd147e5b8') in 0.0012191 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=de63b6e0bfd7539cc6c475c82f88fc4a DependenciesID=540fb9ed85e17a9cecfc4ef14fe3f6b2 StaticDependenciesID=7149968f812af6100f9c29347b2fc38c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027693 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball - Old/Textures/WheelBall - Old.png
+  importAddress: Guid(d1e116197624a1e49b72f535c7c8037b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Pack/Models/Wheel Ball - Old/Textures/WheelBall - Old.png using Guid(d1e116197624a1e49b72f535c7c8037b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c298266b98b11682d5ec8784625e1364') in 0.0353504 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e889d51a7613ef0197b634931d6bcba9 DependenciesID=99112b51015be58608ee7a2137231b62 StaticDependenciesID=d7cf6e933c23e92536ce6e9684dd0662 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.119113 seconds.
+  path: Assets/Ball Pack/Models/Wheel Ball - Old/Materials/WheelBall - Old.mat
+  importAddress: Guid(1e2c0a7aa64841f47b96587fbc6deadd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Ball Pack/Models/Wheel Ball - Old/Materials/WheelBall - Old.mat using Guid(1e2c0a7aa64841f47b96587fbc6deadd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1bcfb0fa98b736b3b5c8f9e7c85104f2') in 0.0246034 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=48895401d3829501686219a00a5c9de0 DependenciesID=6bef781bf69c6d02e10ec767f14273a7 StaticDependenciesID=d3ca236b08416465ab4a897eedb9590b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.867103 seconds.
+  path: Assets/Dreams of the future
+  importAddress: Guid(3e93682719e6b2e4388167f90f424a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future using Guid(3e93682719e6b2e4388167f90f424a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e7685d2b0157e9006c071b6965d57f2a') in 0.0012383 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=13474a46a853b7822c0ef20c1770c675 DependenciesID=3e0e31f9543b6849426e9ef7a1a685cb StaticDependenciesID=7b06239f59c03c835b6a8ace6b42a3c2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.060097 seconds.
+  path: Assets/Dreams of the future/25_gems
+  importAddress: Guid(fd7bfae919c24c447889e05e8cc3bcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems using Guid(fd7bfae919c24c447889e05e8cc3bcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c9075bd7215cf4ff4589c03edfd0ea9a') in 0.0017555 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c560e6404f0a0b942f8ff425db343c1b DependenciesID=ecc292922e331ea46f08dd0bf55c81eb StaticDependenciesID=eab65dc22f3d4fe79ee7f2d80ed3b78b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.682111 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites
+  importAddress: Guid(835b4012d7b70dd4ca57eed8b33a4a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites using Guid(835b4012d7b70dd4ca57eed8b33a4a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f5cd333f19335386e4338fac1b3542ad') in 0.0019783 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1ba5349d72c3f9f6418041f1a45112a7 DependenciesID=eb8aa2dc8299dca9fa30c580100a3433 StaticDependenciesID=947d8b520e227ab0bd7232bfa53f1523 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026888 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (1).png
+  importAddress: Guid(6da729b68853d7543877bbed6cf9d555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (1).png using Guid(6da729b68853d7543877bbed6cf9d555) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '82b1134c440442a2a91681d55cdf6903') in 0.0333348 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9e83b522c3bcbc5fe1b8e4498cf626be DependenciesID=0c4b31dc934004b3d58f9726538f1ebb StaticDependenciesID=725b2f184b7a5e1b895027770cf270a4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (7).png
+  importAddress: Guid(44c33ca2528e8de40b79083846b136c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (7).png using Guid(44c33ca2528e8de40b79083846b136c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '813f3ccf8e2f523e38ecb09e358a706d') in 0.0451404 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=faffa0108ec015d803ecdd0fc9c639ce DependenciesID=3a7fd9b839a0a92c5664bdc5abeef56f StaticDependenciesID=8441b4da805aa116f575f6535288b521 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (14).png
+  importAddress: Guid(54647a546f2cc924c95d432af54ed8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (14).png using Guid(54647a546f2cc924c95d432af54ed8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '40e21c47ccc9f10ef1e0a83587201308') in 0.0405629 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7642dc580895eacd3424efa528a90af3 DependenciesID=e404449a652bbb1f6ad62eb9f243190e StaticDependenciesID=d5ff8debd9d4cc371497ef81b37b4efa 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (20).png
+  importAddress: Guid(b72b508823acfee49bdbe2b1e6c86d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (20).png using Guid(b72b508823acfee49bdbe2b1e6c86d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bd3731b50d80b5aa2d2f6f45ae68016a') in 0.0311715 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5832624ebd616025beb73b174a95912e DependenciesID=c7e8ead20aa5e530dd9f770fa96fb7b9 StaticDependenciesID=adfa29fcacfe6212094ef0e93c058ef7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (10).png
+  importAddress: Guid(119a9e7d9b7b2d642b4cf4287f788ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (10).png using Guid(119a9e7d9b7b2d642b4cf4287f788ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9024cc2132683108af1d687928a74638') in 0.0290525 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=266988c7feac47b2239b1f741beb482e DependenciesID=c3d1fa45c9b5e2ec9612884b4f22f4d2 StaticDependenciesID=210e32064180a2b5088362d9d0bbcc1f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (24).png
+  importAddress: Guid(1f52721ebd2ef83429f7512fbce4a4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (24).png using Guid(1f52721ebd2ef83429f7512fbce4a4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8f97dd1902b9046991fd759a1be8de9b') in 0.0286103 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b03b72387cd6cfdd980186505ac4ba0f DependenciesID=e3e637a2f5c2deee677d1c88559de621 StaticDependenciesID=3255eb746ea22144968c6caef569a2d4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (21).png
+  importAddress: Guid(b10ede2a024b7f145b462dc082c44f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (21).png using Guid(b10ede2a024b7f145b462dc082c44f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b907c283ad87529485f540adb45ad20f') in 0.0297122 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fd0771e09a24e026b964d710b49cdc5e DependenciesID=217030c13ba150072b5f6683cd410de6 StaticDependenciesID=0c6d25a66da72fa19866150ca819c21f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (13).png
+  importAddress: Guid(00ce94660e6809e41933896b95df5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (13).png using Guid(00ce94660e6809e41933896b95df5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f719256081578f81350f06b1c94011f8') in 0.0417324 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6219257946364d0ccd5f972f2844862f DependenciesID=7cb6c0cd1f504f82fb22d7e40ddd6dda StaticDependenciesID=240060386b8454eea106a414a93fe0c1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/free (25).png
+  importAddress: Guid(9bea05a10fdc2f3449bb004bdc3712ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/Sprites/free (25).png using Guid(9bea05a10fdc2f3449bb004bdc3712ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6b1059122df0ad163418a7595e9954b9') in 0.0357619 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=85f31195098ece2c315a55e9d3a7944a DependenciesID=68e493e32446fefcea37fce639bfbee9 StaticDependenciesID=3fdc9a3d4f2288fcfd79d243523d7804 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.866037 seconds.
+  path: Assets/Dreams of the future/25_gems/Sprites/Materials
+  importAddress: Guid(3a79044af160b2242bc6a8dad1b38704) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Dreams of the future/25_gems/Sprites/Materials using Guid(3a79044af160b2242bc6a8dad1b38704) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6a887a8d982cfbea032225b301103ca9') in 0.0283035 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d94cc0da95441e3cc8c4d517a2b3b196 DependenciesID=46f2f4d055b41647675913b3a859078e StaticDependenciesID=08b4a1fd7f51a8456b7f33a4bb0d5809 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.829934 seconds.
+  path: Assets/Dreams of the future/25_gems/demo.unity
+  importAddress: Guid(d314673b1e1563541a2a2f52c47bcab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dreams of the future/25_gems/demo.unity using Guid(d314673b1e1563541a2a2f52c47bcab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3b08f227ceaa7e2c255f2590c656ff8a') in 0.0016169 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=74c423076d9ed43ca36694240f986834 DependenciesID=a4e58145a103e7bdd1312fac44ecf36a StaticDependenciesID=e7392c749c5751b536ca8b8021b5fb71 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
