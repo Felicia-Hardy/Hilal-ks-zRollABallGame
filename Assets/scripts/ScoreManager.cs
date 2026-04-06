@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -18,7 +19,6 @@ public class ScoreManager : MonoBehaviour
         score += value;
         scoreText.text = "Score: " + score;
 
-        // WIN condition
         if (score >= 5)
         {
             WinGame();
@@ -27,8 +27,21 @@ public class ScoreManager : MonoBehaviour
 
     void WinGame()
     {
-        winText.text = "YOU WIN!";
+        Time.timeScale = 0f;
+        StartCoroutine(WinAnimation());
+    }
+
+    IEnumerator WinAnimation()
+    {
+        winText.transform.localScale = Vector3.zero;
         winText.gameObject.SetActive(true);
-        Time.timeScale = 0f; 
+
+        float t = 0;
+        while (t < 1)
+        {
+            t += Time.unscaledDeltaTime * 2;
+            winText.transform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, t);
+            yield return null;
+        }
     }
 }

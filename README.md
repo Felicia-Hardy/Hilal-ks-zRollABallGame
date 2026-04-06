@@ -16,3 +16,4 @@ Step 14: I also added win text.
 Step 15: I changed the camera's angle so that the camera is looking from above. Now the fences no longer obscure the diamonds.
 Step 16: I enlarged the ground to give the feeling that there's still a world outside the fence.
 Step 17: I added a restart by pressing the 'r' key.
+Step 18: I added animation to the "you win" text.
