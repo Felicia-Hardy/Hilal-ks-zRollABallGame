@@ -6,6 +6,9 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            GameObject manager = GameObject.Find("GameManager");
+            manager.GetComponent<ScoreManager>().AddScore(1);
+
             Destroy(gameObject);
         }
     }
