@@ -10,4 +10,6 @@ Step 8: I organized the diamonds by assigning parent codes to them.
 Step 9: I added a script to make the diamonds collectible.
 Step 10: I added score text and I added a script for score text. 
 Step 11: I updated the collectibles script. 
-step 12: I set score text to appear in the left column of the screen.
+Step 12: I set score text to appear in the left column of the screen.
+Step 13: I updated the score manager to display the "You win!" message when you collect 5 diamonds.
+Step 14: I also added win text.

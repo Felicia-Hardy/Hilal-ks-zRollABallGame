@@ -4,24 +4,31 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     public Text scoreText;
+    public Text winText;
+
     private int score = 0;
 
-    private void Start()
+    void Start()
     {
-        UpdateScoreText();
+        winText.gameObject.SetActive(false);
     }
 
     public void AddScore(int value)
     {
         score += value;
-        UpdateScoreText();
+        scoreText.text = "Score: " + score;
+
+        // WIN condition
+        if (score >= 5)
+        {
+            WinGame();
+        }
     }
 
-    private void UpdateScoreText()
+    void WinGame()
     {
-        if (scoreText != null)
-        {
-            scoreText.text = "Score: " + score;
-        }
+        winText.text = "YOU WIN!";
+        winText.gameObject.SetActive(true);
+        Time.timeScale = 0f; 
     }
 }
