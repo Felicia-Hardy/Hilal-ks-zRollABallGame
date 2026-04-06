@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom" at "2026-04-06T21:17:20.0089536Z"
 Built from '6000.4/staging' branch; Version is '6000.4.1f1 (8535861f39e1) revision 8729990'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'tr' Physical Memory: 7971 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-06T21:17:20Z
+Date: 2026-04-06T21:37:39Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom" at "2026-04-06T21:37:39.4491014Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.1f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/hilom/My project (1)
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-61907
+49462
 -licensingIpc
 LicenseClient-hilom
 -force-d3d12
@@ -68,12 +68,12 @@ C:/Users/hilom/My project (1)
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [23184]  Target information:
+Player connection [6160]  Target information:
 
-Player connection [23184]  * "[IP] 192.168.1.44 [Port] 0 [Flags] 2 [Guid] 1621277181 [EditorId] 1621277181 [Version] 1048832 [Id] WindowsEditor(7,selene) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [6160]  * "[IP] 192.168.1.44 [Port] 0 [Flags] 2 [Guid] 3970050009 [EditorId] 3970050009 [Version] 1048832 [Id] WindowsEditor(7,selene) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [23184] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [23184] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6160] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6160] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,7 +85,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 162.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 25.91 ms, found 3 plugins.
 Initialize engine version: 6000.4.1f1 (8535861f39e1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/hilom/My project (1)/Assets
@@ -104,51 +104,51 @@ Direct3D:
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-hilom"
 [Licensing::IpcConnector] LicenseClient-hilom channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1" at "2026-04-06T21:17:21.6095309Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1" at "2026-04-06T21:37:41.8549072Z"
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56232
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005646 seconds.
+Registered in 0.009667 seconds.
 Native extension for WindowsStandalone target not found
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              d2fae123d10246dba4b5b6d18f1d4cbe
-  Correlation Id:          e21a1eef947d87a80b6a05f392f6d1e5
-  External correlation Id: 6119133408381679278
+  Session Id:              0f3b0b7faa304227bd164156aefa8b28
+  Correlation Id:          a130b2032f5d58cf41b72b8a72d9563d
+  External correlation Id: 6203977085096916716
   Machine Id:              XKxCPiat0Kuau2Vir2mc3JKSD2A=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-hilom-6000.4.1" (connect: 0.00s, validation: 0.08s, handshake: 2.85s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1-notifications" at "2026-04-06T21:17:24.5407069Z"
-[Licensing::Module] Licensing Background thread has ended after 4.53s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-hilom-6000.4.1" (connect: 0.07s, validation: 0.03s, handshake: 2.68s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-hilom-6000.4.1-notifications" at "2026-04-06T21:37:44.5654991Z"
+[Licensing::Module] Licensing Background thread has ended after 5.14s
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.586 seconds
-Domain Reload Profiling: 3036ms
-	BeginReloadAssembly (375ms)
-		CreateAndSetChildDomain (5ms)
-	RebuildCommonClasses (97ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (187ms)
-	LoadAllAssembliesAndSetupDomain (759ms)
-		LoadAssemblies (362ms)
-		AnalyzeDomain (735ms)
-			TypeCache.Refresh (731ms)
-				TypeCache.ScanAssembly (688ms)
-	FinalizeReload (1593ms)
+- Finished resetting the current domain, in  0.787 seconds
+Domain Reload Profiling: 2224ms
+	BeginReloadAssembly (538ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (88ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (291ms)
+	LoadAllAssembliesAndSetupDomain (485ms)
+		LoadAssemblies (527ms)
+		AnalyzeDomain (467ms)
+			TypeCache.Refresh (464ms)
+				TypeCache.ScanAssembly (433ms)
+	FinalizeReload (790ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (123ms)
-			BeforeProcessingInitializeOnLoad (239ms)
-			ProcessInitializeOnLoadAttributes (586ms)
-			ProcessInitializeOnLoadMethodAttributes (367ms)
+			InitializePlatformSupportModulesInManaged (80ms)
+			BeforeProcessingInitializeOnLoad (181ms)
+			ProcessInitializeOnLoadAttributes (229ms)
+			ProcessInitializeOnLoadMethodAttributes (166ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -188,7 +188,7 @@ Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Un
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Refreshing native plugins compatible for Editor in 3.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 7.12 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -198,33 +198,249 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.075 seconds
-Domain Reload Profiling: 4371ms
-	BeginReloadAssembly (1733ms)
-		DisableScriptedObjects (30ms)
-		CreateAndSetChildDomain (134ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (444ms)
-	LoadAllAssembliesAndSetupDomain (1064ms)
-		LoadAssemblies (1978ms)
-		AnalyzeDomain (444ms)
-			TypeCache.Refresh (272ms)
-				TypeCache.ScanAssembly (246ms)
-			BuildScriptInfoCaches (150ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (1075ms)
+- Finished resetting the current domain, in  1.455 seconds
+Domain Reload Profiling: 2998ms
+	BeginReloadAssembly (320ms)
+		DisableScriptedObjects (7ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (175ms)
+	LoadAllAssembliesAndSetupDomain (967ms)
+		LoadAssemblies (704ms)
+		AnalyzeDomain (443ms)
+			TypeCache.Refresh (308ms)
+				TypeCache.ScanAssembly (281ms)
+			BuildScriptInfoCaches (111ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1455ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (169ms)
-			ProcessInitializeOnLoadAttributes (434ms)
-			ProcessInitializeOnLoadMethodAttributes (79ms)
-			AfterProcessingInitializeOnLoad (6ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+			BeforeProcessingInitializeOnLoad (193ms)
+			ProcessInitializeOnLoadAttributes (423ms)
+			ProcessInitializeOnLoadMethodAttributes (108ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6289 unused Assets / (4.3 MB). Loaded Objects now: 7134.
-Memory consumption went from 167.7 MB to 163.4 MB.
-Total: 14.679900 ms (FindLiveObjects: 2.224800 ms CreateObjectMapping: 0.661900 ms MarkObjects: 7.576100 ms  DeleteObjects: 3.975400 ms)
+Unloading 6289 unused Assets / (5.9 MB). Loaded Objects now: 7134.
+Memory consumption went from 167.8 MB to 161.9 MB.
+Total: 19.176600 ms (FindLiveObjects: 2.897600 ms CreateObjectMapping: 0.969800 ms MarkObjects: 8.780800 ms  DeleteObjects: 6.523600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2252499.191345 seconds.
+  path: Assets/Scenes/MiniGame.unity
+  importAddress: Guid(482e10bec050010498760af64d5f8a2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/MiniGame.unity using Guid(482e10bec050010498760af64d5f8a2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0e44fd9a0fd03425735b1fc16d55fb8b') in 0.1670832 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=891b93e7ceaeacf75a79d23ceae46522 DependenciesID=2a358cbee1d2a7f3c92a847d85dd5c37 StaticDependenciesID=f24581f33d20871ce9099e69dccb2584 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/Materials
+  importAddress: Guid(3a79044af160b2242bc6a8dad1b38704) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/Materials using Guid(3a79044af160b2242bc6a8dad1b38704) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e6e4892192f3ab8d69ee7e27e6d095eb') in 0.0295567 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6b8c49413494504374a29e4930a36a1e DependenciesID=944a9022fa53207fefe95155d8f8f3ba StaticDependenciesID=08b4a1fd7f51a8456b7f33a4bb0d5809 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (13).png
+  importAddress: Guid(00ce94660e6809e41933896b95df5353) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (13).png using Guid(00ce94660e6809e41933896b95df5353) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '56c312a13350a44748a258eb81172a52') in 0.1567123 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1ea7b1a9e364bb2ce9a3bfbedb9ac30b DependenciesID=fb35337ca12064f25369373856f93634 StaticDependenciesID=c8291981ae655210afa6931bd68a320d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (23).png
+  importAddress: Guid(daee0914001f64c41b429c8c270f3da2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (23).png using Guid(daee0914001f64c41b429c8c270f3da2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '04ea76c313f6d6dae176b08dd7041a29') in 0.0603644 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4859d900ff132db526a715735980b43c DependenciesID=fac567d4b88c50991062045b99828c48 StaticDependenciesID=24d1370c535bfccf87e618a0c38a52bd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (4).png
+  importAddress: Guid(703eed248f190f845886aa59b2c1a85b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (4).png using Guid(703eed248f190f845886aa59b2c1a85b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '49cbfdb727ddfd7c1853daa1fc38c6e1') in 0.2142847 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=52193df6987ec470decad59b88f32dd6 DependenciesID=dcdd45b51641102026317f36fdd42542 StaticDependenciesID=10c0e3e738571748f054e37ea2ecab62 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (14).png
+  importAddress: Guid(54647a546f2cc924c95d432af54ed8fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (14).png using Guid(54647a546f2cc924c95d432af54ed8fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '17aa4d2aa9409d7093625bbef99ffdef') in 0.0365708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dff96f6b0e27b51489582013d8e213cb DependenciesID=5105ac1ff04d89d4d4e34fa9ea355cae StaticDependenciesID=609921884b7e0c2373ccd2a31d9abcee 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (3).png
+  importAddress: Guid(631623504cc918346a96f6e1927d871f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (3).png using Guid(631623504cc918346a96f6e1927d871f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '27f740f8013f7c98e325e63996529470') in 0.0439987 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3f809e1d3324cc9c94eaebf44e815252 DependenciesID=2aab4ec09e9d6a53e7dd7a38c3c8cf36 StaticDependenciesID=928c197f0f46683126628324c5c25e56 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (10).png
+  importAddress: Guid(119a9e7d9b7b2d642b4cf4287f788ffa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (10).png using Guid(119a9e7d9b7b2d642b4cf4287f788ffa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '76b80ecd9d40ddf83e773c4a189e09da') in 0.0480873 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ec94e8bbb24b05f6478db9053aa7cca1 DependenciesID=8a8808cf6d93b4470badf95202c5acde StaticDependenciesID=dd4d0f34832e56300221fadfd99c2b62 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (17).png
+  importAddress: Guid(528157947f1ac174583ec830b38f72ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (17).png using Guid(528157947f1ac174583ec830b38f72ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '44cfba6ce4b50035fe81b4f62b59c12b') in 0.0389285 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=64a9ae22b5156d68377b44cb844bebe9 DependenciesID=de47199532b368b1eb354337e7839ba7 StaticDependenciesID=0e5bc7ca1e1b4ab41d5dbcf39065d372 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (5).png
+  importAddress: Guid(a4206ddecff414044940dc3b6d3d0674) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/LowlyPoly/Dreams of the future/25_gems/Sprites/free (5).png using Guid(a4206ddecff414044940dc3b6d3d0674) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '173c697088da077136e5735074e7db65') in 0.0311806 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d89e1cc1d387b2e2e8dbbccd004d3d01 DependenciesID=6ccb9f1dc381128b53303c3e1e473eda StaticDependenciesID=fb601f60cfc7a99e73b67d7945bd28a5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.154089 seconds.
+  path: Assets/HintsStarsLite/Magic Score 8.wav
+  importAddress: Guid(b7b21f9a60172844dbf194c6b25f40dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HintsStarsLite/Magic Score 8.wav using Guid(b7b21f9a60172844dbf194c6b25f40dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f3e634aa94f2d2a5707d1c4208161082') in 0.0526113 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=51b029d852f05e67df2a4f9ce4be865f DependenciesID=4209a561f0502d788fbea7e873737ca7 StaticDependenciesID=28f31270833857f6d48ba784a9fb2c0e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/HintsStarsLite/Retro Star Descending 3.wav
+  importAddress: Guid(16d0788660e724f44ae05e641af1b222) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HintsStarsLite/Retro Star Descending 3.wav using Guid(16d0788660e724f44ae05e641af1b222) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7bab97dc922e16efc82516806000f53b') in 0.0166665 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f8d940ead979a04533e853a15212506a DependenciesID=3543877d04a9e0d227d5b381e5ad86da StaticDependenciesID=f4c76c424cd6eaea2c53db703f312582 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HintsStarsLite/Bell Star 2.wav
+  importAddress: Guid(d6945231be24c7240a281458fc849e1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HintsStarsLite/Bell Star 2.wav using Guid(d6945231be24c7240a281458fc849e1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2de5b1979c81438bdfb170ce19d6eace') in 0.0194851 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9e57a5cdd246332b527a54ac2c3f4c93 DependenciesID=7b41b489012bce69419c2984c7a62646 StaticDependenciesID=eb0bea14f18b6263fbf61cdac7a8dbac 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/HintsStarsLite
+  importAddress: Guid(50879c81a163e774bae21d3c0d68afd2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HintsStarsLite using Guid(50879c81a163e774bae21d3c0d68afd2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '64ce6c71b70f47544a06515d97b8937b') in 0.0219556 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dc21d993bc02ead141492e233cc968a4 DependenciesID=8eaa544abf733bfec2c0ef6fd105bba3 StaticDependenciesID=f4289401e9a1505380c88d89a5bc4ee0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/HintsStarsLite/Score Point 2.wav
+  importAddress: Guid(28a7e67ca249e874887b4c601e4f5e1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HintsStarsLite/Score Point 2.wav using Guid(28a7e67ca249e874887b4c601e4f5e1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '729af4166b19d979863aa265c16f73eb') in 0.0181515 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2811b6240bcd59502ab04a3d9333c608 DependenciesID=67112afa163c2c2676680bee20e4f96e StaticDependenciesID=8fc94e81dd5fdc313681b397afd6489f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/HintsStarsLite/Mysterious Chapter.wav
+  importAddress: Guid(76adc3bada8ddff4bbd042635fed2f7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HintsStarsLite/Mysterious Chapter.wav using Guid(76adc3bada8ddff4bbd042635fed2f7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '87b5015edd8598593f8cad3a639b3361') in 0.0147559 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=20356222b349cc54db4b000e58611aaa DependenciesID=c9e2fd24192332b2931d5811080fecd9 StaticDependenciesID=cc3f8c85f907b0ffdf60485b19b6fc55 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/HintsStarsLite/Notified 2.wav
+  importAddress: Guid(568470e29bef88c4aaa027db357be957) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HintsStarsLite/Notified 2.wav using Guid(568470e29bef88c4aaa027db357be957) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '56728b644a98c1602fe3bd20aaab711d') in 0.014918 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9a4f9f06f5f3c998efd170fba8902ac4 DependenciesID=d39cc4aec6e7219f383c57c54e43f45a StaticDependenciesID=a510ce936ac529acc754fc3a2a220a89 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/HintsStarsLite/Shimmery Reward 5.wav
+  importAddress: Guid(6e7f23ef945c235438595e89d6332d46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HintsStarsLite/Shimmery Reward 5.wav using Guid(6e7f23ef945c235438595e89d6332d46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6a23fa3fe72a867861e1195bfc3c6e11') in 0.0141273 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d085be9e2a8e504ae2bdef9b1e093131 DependenciesID=7390a610f1282ca72d92059f83209ad5 StaticDependenciesID=d4f32e07e9821207cdecd89145ad9c18 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/HintsStarsLite/Magic Score 9.wav
+  importAddress: Guid(46e7fc2590c4ae64fb8c79606698b98d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/HintsStarsLite/Magic Score 9.wav using Guid(46e7fc2590c4ae64fb8c79606698b98d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '67e5f79db29edff61db3463b7274754b') in 0.0151508 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=897b939ebb0dcdf1f1f53d3c6fc69cd7 DependenciesID=5f0d3aa33474ee6ac2634e12249b78ed StaticDependenciesID=77972c2ebc30c8ff00db9f4628de639f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.277235 seconds.
+  path: Assets/HintsStarsLite/Approved 1.wav
+  importAddress: Guid(d296adf47dd0a514fbd36b5ff7df9f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HintsStarsLite/Approved 1.wav using Guid(d296adf47dd0a514fbd36b5ff7df9f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '79a06cb8e38814721efe281f6ee518f2') in 0.4792805 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cad0555fa8248f51bfe5b9d29d403c94 DependenciesID=43924083da24f5263dcf3a2cfc8007f6 StaticDependenciesID=c7e9511fd5cc2460d67784cef0e04e40 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/HintsStarsLite/Harp Money 1.wav
+  importAddress: Guid(c58a6e6d4ceb56e4882a7d60561a7afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HintsStarsLite/Harp Money 1.wav using Guid(c58a6e6d4ceb56e4882a7d60561a7afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '38ba2826eb7a158478054ebaab91ccd1') in 0.021425 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=15ecd8abcf9e7d61ba446cd5a04677b4 DependenciesID=15750355813dae031f1ec0cb5a179cfd StaticDependenciesID=1a46dbb038c3ffb90a031beebd03e816 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/HintsStarsLite/Discovery 1.wav
+  importAddress: Guid(67583b1df87740e41b2542fe351fd91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HintsStarsLite/Discovery 1.wav using Guid(67583b1df87740e41b2542fe351fd91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '90a20ff6e06325168a3b236ea05cadd4') in 0.0214929 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=34dd098dc407f1cd27a0d01819ae575b DependenciesID=fd2fe12368f2ef91b50e74479d200f70 StaticDependenciesID=d64760ac3a587ded1578d7cedece306f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/HintsStarsLite/Harp 4.wav
+  importAddress: Guid(a1c48dd39207ece46a29b8796640661e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HintsStarsLite/Harp 4.wav using Guid(a1c48dd39207ece46a29b8796640661e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c0879297408f7fe0435d0d205ceb047c') in 0.0188568 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=848b31192e024453ca8236f963ce926b DependenciesID=ebce0329ab0999ba738ea45641e596ef StaticDependenciesID=a66e9af7e44fa26618ee9ac226fa8692 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/HintsStarsLite/Magic Score 9.wav
+  importAddress: Guid(46e7fc2590c4ae64fb8c79606698b98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HintsStarsLite/Magic Score 9.wav using Guid(46e7fc2590c4ae64fb8c79606698b98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c0218ae5edad202d0630eae0c670c2d4') in 0.0191967 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8d3eac74efae2a0e92c5ad0554a1dd1b DependenciesID=7ff9f2eda31cd75e034d836470203f27 StaticDependenciesID=5863cc4a8379a10564d6ea2d4dbb29d4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/HintsStarsLite/Checkpoint 2.wav
+  importAddress: Guid(f64ab1f9953f79344995a101decf9830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HintsStarsLite/Checkpoint 2.wav using Guid(f64ab1f9953f79344995a101decf9830) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8aa5c00df6e09b85641521ef4ce8ec89') in 0.0189298 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=55372d10a62c6a927caa1cf0b7ad96df DependenciesID=4f1627430266a69832c65bf411731a39 StaticDependenciesID=8061cfdf08db68566b9eb7b315112ba4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/HintsStarsLite/Notified 2.wav
+  importAddress: Guid(568470e29bef88c4aaa027db357be957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HintsStarsLite/Notified 2.wav using Guid(568470e29bef88c4aaa027db357be957) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7d0e0f9f24fbb7996347d5f33b6b4fca') in 0.0217739 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4c805e8e658355227238f852c1bbdddf DependenciesID=710ac8e683117e9607e7b87b2e753150 StaticDependenciesID=1a766b48fb776a3422913581aaf36c25 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/HintsStarsLite/Shimmery Reward 5.wav
+  importAddress: Guid(6e7f23ef945c235438595e89d6332d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HintsStarsLite/Shimmery Reward 5.wav using Guid(6e7f23ef945c235438595e89d6332d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0418e4df2b6a33d38cd5f1e6e623f061') in 0.0219409 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=49ef99547d1e60154190bbcbb38ced5e DependenciesID=375fc44dfc43f2eff9f19fa53bb77715 StaticDependenciesID=944554eb82910619c668ae235050b193 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
