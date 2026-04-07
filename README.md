@@ -18,3 +18,8 @@ Step 16: I enlarged the ground to give the feeling that there's still a world ou
 Step 17: I added a restart by pressing the 'r' key.
 Step 18: I added animation to the "you win" text.
 Step 19: I added sound effects so that the diamonds play when collected, and I updated the scripts for that reason.
+Step 20: I added particle material and made it possible for the diamonds to have effects when collected. I added a bloom effect.
+Step 21: I added background music. 
+Step 22: I added player movement sounds. 
+Step 23: I fixed the issue where the score counting had stopped. 
+Step 24: Some diamonds were too high up and couldn't be collected; you had to jump over them, so I moved them down.

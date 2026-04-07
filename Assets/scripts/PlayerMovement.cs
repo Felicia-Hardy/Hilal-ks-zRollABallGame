@@ -6,6 +6,9 @@ public class PlayerMovement : MonoBehaviour
     public float sprintMultiplier = 2f;
     public float jumpForce = 5f;
 
+    public AudioSource moveSound;
+    public float minSpeed = 0.1f;
+
     private Rigidbody rb;
     private bool isGrounded;
 
@@ -16,21 +19,42 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // space=jump
+        // 🛑 Oyun durduysa sesi kapat
+        if (Time.timeScale == 0f)
+        {
+            if (moveSound.isPlaying)
+                moveSound.Stop();
+            return;
+        }
+
+        // 🟢 Zıplama
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+
+        // 🔊 Hareket sesi
+        float currentSpeed = rb.linearVelocity.magnitude;
+
+        if (currentSpeed > minSpeed)
+        {
+            if (!moveSound.isPlaying)
+                moveSound.Play();
+        }
+        else
+        {
+            if (moveSound.isPlaying)
+                moveSound.Stop();
         }
     }
 
     void FixedUpdate()
     {
-        float moveX = Input.GetAxis("Horizontal"); // A/D veya ← →
-        float moveZ = Input.GetAxis("Vertical");   // W/S veya ↑ ↓
+        float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Vertical");
 
         float currentSpeed = speed;
 
-        // Shift=speed
         if (Input.GetKey(KeyCode.LeftShift))
         {
             currentSpeed *= sprintMultiplier;

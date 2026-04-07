@@ -11,13 +11,19 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        winText.gameObject.SetActive(false);
+        scoreText.text = "Score: 0";
+
+        if (winText != null)
+            winText.gameObject.SetActive(false);
     }
 
     public void AddScore(int value)
     {
         score += value;
-        scoreText.text = "Score: " + score;
+        Debug.Log("Score: " + score); 
+
+        if (scoreText != null)
+            scoreText.text = "Score: " + score;
 
         if (score >= 5)
         {
@@ -33,6 +39,8 @@ public class ScoreManager : MonoBehaviour
 
     IEnumerator WinAnimation()
     {
+        if (winText == null) yield break;
+
         winText.transform.localScale = Vector3.zero;
         winText.gameObject.SetActive(true);
 

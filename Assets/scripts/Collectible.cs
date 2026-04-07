@@ -5,18 +5,16 @@ public class Collectible : MonoBehaviour
     public AudioClip collectSound;
     public ParticleSystem shineEffect;
 
-    private Renderer rend;
-
-    void Start()
-    {
-        rend = GetComponent<Renderer>();
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            // PARLAMA
+            //  SCORE EKLE
+            GameObject.Find("GameManager")
+                .GetComponent<ScoreManager>()
+                .AddScore(1);
+
+            //  PARLAMA
             if (shineEffect != null)
             {
                 Instantiate(shineEffect, transform.position, Quaternion.identity);
