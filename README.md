@@ -23,3 +23,4 @@ Step 21: I added background music.
 Step 22: I added player movement sounds. 
 Step 23: I fixed the issue where the score counting had stopped. 
 Step 24: Some diamonds were too high up and couldn't be collected; you had to jump over them, so I moved them down.
+Step 25: Timer added.

@@ -7,6 +7,8 @@ public class ScoreManager : MonoBehaviour
     public Text scoreText;
     public Text winText;
 
+    public Timer timer; //TIMER EKLENDÝ
+
     private int score = 0;
 
     void Start()
@@ -20,7 +22,7 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int value)
     {
         score += value;
-        Debug.Log("Score: " + score); 
+        Debug.Log("Score: " + score);
 
         if (scoreText != null)
             scoreText.text = "Score: " + score;
@@ -34,6 +36,13 @@ public class ScoreManager : MonoBehaviour
     void WinGame()
     {
         Time.timeScale = 0f;
+
+        // TIMER DURDU
+        if (timer != null)
+        {
+            timer.StopTimer();
+        }
+
         StartCoroutine(WinAnimation());
     }
 
